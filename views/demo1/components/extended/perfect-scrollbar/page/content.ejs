@@ -1,0 +1,86 @@
+
+						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+							<div class="row">
+								<div class="col">
+									<div class="alert alert-light alert-elevate fade show" role="alert">
+										<div class="alert-icon"><i class="flaticon-warning kt-font-brand"></i></div>
+										<div class="alert-text">
+											Minimalistic but perfect custom scrollbar plugin.
+											<br>
+											For more info please visit the plugin's <a class="kt-link kt-font-bold" href="http://utatti.github.io/perfect-scrollbar/" target="_blank">Demo Page</a> or <a class="kt-link kt-font-bold" href="https://github.com/utatti/perfect-scrollbar/" target="_blank">Github Repo</a>.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+
+									<!--begin::Portlet-->
+									<% include portlet %>
+									<!--end::Portlet-->
+
+									<!--begin::Portlet-->
+									<% include portlet %>
+									<!--end::Portlet-->
+
+								</div>
+								<div class="col-lg-6">
+
+									<!--begin::Portlet-->
+									<% include portlet %>
+									<!--end::Portlet-->
+									
+								</div>
+							</div>
+
+							<!--begin::Modal-->
+							<div class="modal fade" id="kt_scrollable_modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">New message</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="kt-scroll" data-scroll="true" data-height="200">
+												<form>
+													<div class="form-group">
+														<label for="recipient-name" class="form-control-label">Recipient:</label>
+														<input type="text" class="form-control" id="recipient-name">
+													</div>
+													<div class="form-group">
+														<label for="recipient-name" class="form-control-label">Groups:</label>
+														<div class="kt-checkbox-list">
+															<label class="kt-checkbox kt-checkbox--solid">
+																<input type="checkbox" checked=""> Management
+																<span></span>
+															</label>
+															<label class="kt-checkbox kt-checkbox--solid">
+																<input type="checkbox"> Finance
+																<span></span>
+															</label>
+															<label class="kt-checkbox kt-checkbox--solid">
+																<input type="checkbox"> IT Department
+																<span></span>
+															</label>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="message-text" class="form-control-label">Message:</label>
+														<textarea class="form-control" id="message-text" rows="6"></textarea>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary" id="kt_blockui_4_1">Submit</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--end::Modal-->
+						</div>

@@ -1,0 +1,49 @@
+
+									<div class="kt-portlet">
+										<div class="kt-portlet__head">
+											<div class="kt-portlet__head-label">
+												<h3 class="kt-portlet__head-title">
+													Basic Tree
+												</h3>
+											</div>
+										</div>
+										<div class="kt-portlet__body">
+											<div id="kt_tree_1" class="tree-demo">
+												<ul>
+													<li>
+														Root node 1
+														<ul>
+															<li data-jstree='{ "selected" : true }'>
+																<a href="javascript:;">
+																	Initially selected </a>
+															</li>
+															<li data-jstree='{ "icon" : "fa fa-briefcase kt-font-success " }'>
+																custom icon URL
+															</li>
+															<li data-jstree='{ "opened" : true }'>
+																initially open
+																<ul>
+																	<li data-jstree='{ "disabled" : true }'>
+																		Disabled Node
+																	</li>
+																	<li data-jstree='{ "type" : "file" }'>
+																		Another node
+																	</li>
+																</ul>
+															</li>
+															<li data-jstree='{ "icon" : "fa fa-warning kt-font-danger" }'>
+																Custom icon class (bootstrap)
+															</li>
+														</ul>
+													</li>
+													<li data-jstree='{ "type" : "file" }'>
+														<a href="http://www.keenthemes.com">
+															Clickanle link node </a>
+													</li>
+												</ul>
+											</div>
+											<div class="alert alert-outline-primary kt-margin-t-10">
+												Note! Opened and selected nodes will be saved in the user's browser, so when returning to the same tree the previous state will be restored.
+											</div>
+										</div>
+									</div>

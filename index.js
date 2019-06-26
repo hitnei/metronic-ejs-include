@@ -13,6 +13,10 @@ app.get('/error', function(req, res) {
     res.render("./demo1/custom/pages/error/error-6.ejs");
 });
 
+app.get('/test', function(req, res) {
+    res.render("./demo1/index.ejs");
+});
+
 
 app.listen(8080);
 console.log('8080 is the magic port');
