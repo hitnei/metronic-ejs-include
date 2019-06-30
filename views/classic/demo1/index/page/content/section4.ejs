@@ -1,0 +1,126 @@
+<!-- wDailySales = {
+  title: 'Daily Sales',
+  desc: 'Check out each collumn for more details'
+} -->
+<!-- wProfitShare = {
+  title: 'Profit Share',
+  desc: 'Profit Share between customers',
+  chart: [
+    stats: '45',
+    content: [
+      item1: '37% Sport Tickets',
+      item2: '47% Business Events',
+      item3: '19% Others'
+    ]
+  ]
+} -->
+<!-- wRevenueChange = {
+  title: 'Revenue Change',
+  desc: 'Revenue change breakdown by cities',
+  chart: [
+    content: [
+      item1: '+10% New York',
+      item2: '-7% London',
+      item3: '+20% California'
+    ]
+  ]
+} -->
+
+<div class="row">
+  <div class="col-xl-4">
+
+    <!--begin:: Widgets/Daily Sales-->
+    <div class="kt-portlet kt-portlet--height-fluid">
+      <div class="kt-widget14">
+        <div class="kt-widget14__header kt-margin-b-30">
+          <h3 class="kt-widget14__title">
+            <%= wDailySales.title %>
+          </h3>
+          <span class="kt-widget14__desc">
+            <%= wDailySales.desc %>
+          </span>
+        </div>
+        <div class="kt-widget14__chart" style="height:120px;">
+          <canvas id="kt_chart_daily_sales"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!--end:: Widgets/Daily Sales-->
+  </div>
+  <div class="col-xl-4">
+
+    <!--begin:: Widgets/Profit Share-->
+    <div class="kt-portlet kt-portlet--height-fluid">
+      <div class="kt-widget14">
+        <div class="kt-widget14__header">
+          <h3 class="kt-widget14__title">
+            <%= wProfitShare.title %>
+          </h3>
+          <span class="kt-widget14__desc">
+            <%= wProfitShare.desc %>
+          </span>
+        </div>
+        <div class="kt-widget14__content">
+          <div class="kt-widget14__chart">
+            <div class="kt-widget14__stat"><%= wProfitShare.chart[stats] %></div>
+            <canvas id="kt_chart_profit_share" style="height: 140px; width: 140px;"></canvas>
+          </div>
+          <div class="kt-widget14__legends">
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-success"></span>
+              <span class="kt-widget14__stats"><%= wProfitShare.chart[content[item1]] %></span>
+            </div>
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-warning"></span>
+              <span class="kt-widget14__stats"><%= wProfitShare.chart[content[item2]] %></span>
+            </div>
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-brand"></span>
+              <span class="kt-widget14__stats"><%= wProfitShare.chart[content[item3]] %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end:: Widgets/Profit Share-->
+  </div>
+  <div class="col-xl-4">
+
+    <!--begin:: Widgets/Revenue Change-->
+    <div class="kt-portlet kt-portlet--height-fluid">
+      <div class="kt-widget14">
+        <div class="kt-widget14__header">
+          <h3 class="kt-widget14__title">
+            <%= wRevenueChange.title %>
+          </h3>
+          <span class="kt-widget14__desc">
+              <%= wRevenueChange.desc %>
+          </span>
+        </div>
+        <div class="kt-widget14__content">
+          <div class="kt-widget14__chart">
+            <div id="kt_chart_revenue_change" style="height: 150px; width: 150px;"></div>
+          </div>
+          <div class="kt-widget14__legends">
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-success"></span>
+              <span class="kt-widget14__stats"><%= wRevenueChange.chart[content[item1]] %></span>
+            </div>
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-warning"></span>
+              <span class="kt-widget14__stats"><%= wRevenueChange.chart[content[item2]] %></span>
+            </div>
+            <div class="kt-widget14__legend">
+              <span class="kt-widget14__bullet kt-bg-brand"></span>
+              <span class="kt-widget14__stats"><%= wRevenueChange.chart[content[item3]] %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end:: Widgets/Revenue Change-->
+  </div>
+</div>

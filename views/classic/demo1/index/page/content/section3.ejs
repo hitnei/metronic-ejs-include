@@ -1,0 +1,578 @@
+<!-- wBestSellers = {
+  title: 'Best Sellers',
+  menu: [option1: 'Latest', option2: 'Month', option3: 'All time']
+  content: [
+    item1: [
+      src: '/assets/media//products/product27.jpg'.
+      title: 'Great Logo Designn',
+      desc: 'Metronic admin themes.',
+      info: [info1: 'Author:', info2: 'Keenthemes', info3: 'Released:', info4: '23.08.17'],
+      stats: [number1: '19,200', sale: 'sales', number2: '1046', vote: 'votes']
+    ],
+    item2: [
+      src: '/assets/media//products/product22.jpg'.
+      title: 'Branding Mockup ',
+      desc: 'Metronic bootstrap themes.',
+      info: [info1: 'Author:', info2: 'Fly themes', info3: 'Released:', info4: '23.08.17'],
+      stats: [number1: '24,583', sale: 'sales', number2: '3809', vote: 'votes']
+    ],
+    item3: [
+      src: '/assets/media//products/product15.jpg'.
+      title: 'Awesome Mobile App',
+      desc: 'Metronic admin themes.Lorem Ipsum Amet',
+      info: [info1: 'Author:', info2: 'Keenthemes', info3: 'Released:', info4: '23.08.17'],
+      stats: [number1: '210,054', sale: 'sales', number2: '1103', vote: 'votes']
+    ]
+  ]
+} -->
+
+<!-- wNewUsers = {
+  title: 'New Users',
+  menu: [option1: 'today', option2: 'month'],
+  button: 'Follow',
+  content: [
+    item1: [
+      src: '/assets/media/users/100_4.jpg',
+      username: 'Anna Strong',
+      textContent: 'Visual Designer,Google Inc',
+      button: 'Follow'
+    ],
+    item2: [
+      src: '/assets/media/users/100_14.jpg',
+      username: 'Anna Strong',
+      textContent: 'Visual Designer,Google Inc',
+      button: 'Follow'
+    ],
+    item3: [
+      src: '/assets/media/users/100_11.jpg',
+      username: 'Anna Strong',
+      textContent: 'Visual Designer,Google Inc',
+      button: 'Follow'
+    ],
+    item4: [
+      src: '/assets/media/users/100_1.jpg',
+      username: 'Anna Strong',
+      textContent: 'Visual Designer,Google Inc',
+      button: 'Follow'
+    ],
+    item5: [
+      src: '/assets/media/users/100_5.jpg',
+      username: 'Anna Strong',
+      textContent: 'Visual Designer,Google Inc',
+      button: 'Follow'
+    ],
+  ]
+} -->
+
+<div class="row">
+  <div class="col-xl-8">
+
+    <!--begin:: Widgets/Best Sellers-->
+    <div class="kt-portlet kt-portlet--height-fluid">
+      <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+          <h3 class="kt-portlet__head-title">
+            <%= wBestSellers.title %>
+          </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+          <ul class="nav nav-pills nav-pills-sm nav-pills-label nav-pills-bold" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#kt_widget5_tab1_content" role="tab">
+                <%= wBestSellers.menu[option1] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#kt_widget5_tab2_content" role="tab">
+                <%= wBestSellers.menu[option2] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#kt_widget5_tab3_content" role="tab">
+                <%= wBestSellers.menu[option3] %>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="kt-portlet__body">
+        <div class="tab-content">
+          <div class="tab-pane active" id="kt_widget5_tab1_content" aria-expanded="true">
+            <div class="kt-widget5">
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item1[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item1[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item1[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item1[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item1[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number1]]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item1[stats[sale]]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number2]]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item1[stats[vote]]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item2[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item2[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item2[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item2[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item2[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number1]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item2[stats[sale]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number2]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item2[stats[vote]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item2[src] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item2[title] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item2[desc] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item2[info[info1]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info2]] %></span>
+                      <span><%= wBestSellers.content[item2[info[info3]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info4]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number1]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item2[stats[sale]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number2]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item2[stats[vote]] %></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="kt_widget5_tab2_content">
+            <div class="kt-widget5">
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item2[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item2[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item2[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item2[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item2[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number1]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item2[stats[sale]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number2]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item2[stats[vote]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item2[src] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item2[title] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item2[desc] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item2[info[info1]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info2]] %></span>
+                      <span><%= wBestSellers.content[item2[info[info3]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info4]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number1]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item2[stats[sale]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number2]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item2[stats[vote]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item1[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item1[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item1[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item1[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item1[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number1]]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item1[stats[sale]]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number2]]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item1[stats[vote]]] %></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="kt_widget5_tab3_content">
+            <div class="kt-widget5">
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item1[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item1[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item1[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item1[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item1[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number1]]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item1[stats[sale]]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number2]]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item1[stats[vote]]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item1[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item1[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item1[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item1[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item1[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item1[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number1]]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item1[stats[sale]]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item1[stats[number2]]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item1[stats[vote]]] %></span>
+                  </div>
+                </div>
+              </div>
+              <div class="kt-widget5__item">
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__pic">
+                    <img class="kt-widget7__img" src="<%= wBestSellers.content[item2[src]] %>" alt="">
+                  </div>
+                  <div class="kt-widget5__section">
+                    <a href="#" class="kt-widget5__title">
+                      <%= wBestSellers.content[item2[title]] %>
+                    </a>
+                    <p class="kt-widget5__desc">
+                      <%= wBestSellers.content[item2[desc]] %>
+                    </p>
+                    <div class="kt-widget5__info">
+                      <span><%= wBestSellers.content[item2[info[info1]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info2]]] %></span>
+                      <span><%= wBestSellers.content[item2[info[info3]]] %></span>
+                      <span class="kt-font-info"><%= wBestSellers.content[item2[info[info4]]] %></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="kt-widget5__content">
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number1]] %></span>
+                    <span class="kt-widget5__sales"><%= wBestSellers.content[item2[stats[sale]] %></span>
+                  </div>
+                  <div class="kt-widget5__stats">
+                    <span class="kt-widget5__number"><%= wBestSellers.content[item2[stats[number2]] %></span>
+                    <span class="kt-widget5__votes"><%= wBestSellers.content[item2[stats[vote]] %></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end:: Widgets/Best Sellers-->
+  </div>
+  <div class="col-xl-4">
+
+    <!--begin:: Widgets/New Users-->
+    <div class="kt-portlet kt-portlet--tabs kt-portlet--height-fluid">
+      <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+          <h3 class="kt-portlet__head-title">
+            <%= wNewUsers.title %>
+          </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+          <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-brand" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#kt_widget4_tab1_content" role="tab">
+                <%= wNewUsers.menu[option1] %>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#kt_widget4_tab2_content" role="tab">
+                <%= wNewUsers.menu[option2] %>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="kt-portlet__body">
+        <div class="tab-content">
+          <div class="tab-pane active" id="kt_widget4_tab1_content">
+            <div class="kt-widget4">
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUsers.content[item1[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUsers.content[item1[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUsers.content[item1[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-brand btn-bold"><%= wNewUsers.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item2[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item2[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item2[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-warning btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item3[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item3[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item3[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-danger btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item4[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item4[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item4[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-success btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item5[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item5[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item5[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-primary btn-bold"><%= wNewUser.button %></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="kt_widget4_tab2_content">
+            <div class="kt-widget4">
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUsers.content[item1[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUsers.content[item1[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUsers.content[item1[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-brand btn-bold"><%= wNewUsers.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item2[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item2[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item2[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-warning btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item3[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item3[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item3[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-danger btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item4[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item4[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item4[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-success btn-bold"><%= wNewUser.button %></a>
+              </div>
+              <div class="kt-widget4__item">
+                <div class="kt-widget4__pic kt-widget4__pic--pic">
+                  <img src="<%= wNewUser.content[item5[src]] %>" alt="">
+                </div>
+                <div class="kt-widget4__info">
+                  <a href="#" class="kt-widget4__username">
+                    <%= wNewUser.content[item5[username]] %>
+                  </a>
+                  <p class="kt-widget4__text">
+                    <%= wNewUser.content[item5[textContent]] %>
+                  </p>
+                </div>
+                <a href="#" class="btn btn-sm btn-label-primary btn-bold"><%= wNewUser.button %></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end:: Widgets/New Users-->
+  </div>
+</div>
