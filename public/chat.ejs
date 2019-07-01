@@ -1,0 +1,203 @@
+
+<div class="modal fade- modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="kt-chat">
+				<div class="kt-portlet kt-portlet--last">
+					<div class="kt-portlet__head">
+						<div class="kt-chat__head ">
+							<div class="kt-chat__left">
+								<div class="kt-chat__label">
+									<a href="#" class="kt-chat__title"><%= data.chat.head.left.title %></a>
+									<span class="kt-chat__status">
+										<span class="kt-badge kt-badge--dot kt-badge--success"></span> <%= data.chat.head.left.status %>
+									</span>
+								</div>
+							</div>
+							<div class="kt-chat__right">
+								<div class="dropdown dropdown-inline">
+									<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="flaticon-more-1"></i>
+									</button>
+									<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-md">
+
+										<!--begin::Nav-->
+										<ul class="kt-nav">
+											<li class="kt-nav__head">
+												<%= data.chat.head.right[0].text %>
+												<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title=<%= data.chat.head.right[0].title %>></i>
+											</li>
+											<li class="kt-nav__separator"></li>
+											<li class="kt-nav__item">
+												<a href=<%= data.chat.head.right[1].link %> class="kt-nav__link">
+													<i class="kt-nav__link-icon flaticon2-group"></i>
+													<span class="kt-nav__link-text"><%= data.chat.head.right[1].text %></span>
+												</a>
+											</li>
+											<li class="kt-nav__item">
+												<a href=<%= data.chat.head.right[2].link %> class="kt-nav__link">
+													<i class="kt-nav__link-icon flaticon2-open-text-book"></i>
+													<span class="kt-nav__link-text"><%= data.chat.head.right[2].text %></span>
+													<span class="kt-nav__link-badge">
+														<span class="kt-badge kt-badge--brand  kt-badge--rounded-"><%= data.chat.head.right[2].badge %></span>
+													</span>
+												</a>
+											</li>
+											<li class="kt-nav__item">
+												<a href=<%= data.chat.head.right[3].link %> class="kt-nav__link">
+													<i class="kt-nav__link-icon flaticon2-bell-2"></i>
+													<span class="kt-nav__link-text"><%= data.chat.head.right[3].text %></span>
+												</a>
+											</li>
+											<li class="kt-nav__item">
+												<a href=<%= data.chat.head.right[4].link %> class="kt-nav__link">
+													<i class="kt-nav__link-icon flaticon2-dashboard"></i>
+													<span class="kt-nav__link-text"><%= data.chat.head.right[4].text %></span>
+												</a>
+											</li>
+											<li class="kt-nav__item">
+												<a href=<%= data.chat.head.right[5].link %> class="kt-nav__link">
+													<i class="kt-nav__link-icon flaticon2-protected"></i>
+													<span class="kt-nav__link-text"><%= data.chat.head.right[5].text %></span>
+												</a>
+											</li>
+											<li class="kt-nav__separator"></li>
+											<li class="kt-nav__foot">
+												<a class="btn btn-label-brand btn-bold btn-sm" href=<%= data.chat.head.right[6].link %>><%= data.chat.head.right[6].text %></a>
+												<a class="btn btn-clean btn-bold btn-sm" href=<%= data.chat.head.right[7].link %> data-toggle="kt-tooltip" data-placement="right" title="Click to learn more..."><%= data.chat.head.right[7].text %></a>
+											</li>
+										</ul>
+
+										<!--end::Nav-->
+									</div>
+								</div>
+								<button type="button" class="btn btn-clean btn-sm btn-icon" data-dismiss="modal">
+									<i class="flaticon2-cross"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="kt-portlet__body">
+						<div class="kt-scroll kt-scroll--pull" data-height="410" data-mobile-height="300">
+							<div class="kt-chat__messages kt-chat__messages kt-chat__messages--modal">
+								<div class="kt-chat__message kt-bg-light-success">
+									<div class="kt-chat__user">
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[0] %> alt="image">
+										</span>
+										<a href=<%= data.chat.body.link[0] %> class="kt-chat__username"><%= data.chat.body.username[0] %></span></a>
+										<span class="kt-chat__datetime"><%= data.chat.body.time[0] %></span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[0] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-chat__message--right kt-bg-light-brand">
+									<div class="kt-chat__user">
+										<span class="kt-chat__datetime"><%= data.chat.body.time[1] %></span>
+										<a href=<%= data.chat.body.link[1] %> class="kt-chat__username"><%= data.chat.body.username[1] %></span></a>
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[1] %> alt="image">
+										</span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[1] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-bg-light-success">
+									<div class="kt-chat__user">
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[0] %> alt="image">
+										</span>
+										<a href=<%= data.chat.body.link[2] %> class="kt-chat__username"><%= data.chat.body.username[0] %></span></a>
+										<span class="kt-chat__datetime"><%= data.chat.body.time[2] %></span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[2] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-chat__message--right kt-bg-light-brand">
+									<div class="kt-chat__user">
+										<span class="kt-chat__datetime"><%= data.chat.body.time[3] %></span>
+										<a href=<%= data.chat.body.link[3] %> class="kt-chat__username"><%= data.chat.body.username[1] %></span></a>
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[1] %> alt="image">
+										</span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[3] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-bg-light-success">
+									<div class="kt-chat__user">
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[0] %> alt="image">
+										</span>
+										<a href=<%= data.chat.body.link[4] %> class="kt-chat__username"><%= data.chat.body.username[0] %></span></a>
+										<span class="kt-chat__datetime"><%= data.chat.body.time[4] %></span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[4][0] %> <b class="kt-font-brand"><%- data.chat.body.text[4][1] %></b> <br><%- data.chat.body.text[4][2] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-chat__message--right kt-bg-light-brand">
+									<div class="kt-chat__user">
+										<span class="kt-chat__datetime"><%= data.chat.body.time[5] %></span>
+										<a href=<%= data.chat.body.link[5] %> class="kt-chat__username"><%= data.chat.body.username[1] %></span></a>
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[1] %> alt="image">
+										</span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[5] %> <a href=<%= data.chat.body.link[6] %> class="kt-font-bold kt-link"></a>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-bg-light-success">
+									<div class="kt-chat__user">
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[0] %> alt="image">
+										</span>
+										<a href=<%= data.chat.body.link[7] %> class="kt-chat__username"><%= data.chat.body.username[0] %></span></a>
+										<span class="kt-chat__datetime"><%= data.chat.body.time[6] %></span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[6] %>
+									</div>
+								</div>
+								<div class="kt-chat__message kt-chat__message--right kt-bg-light-brand">
+									<div class="kt-chat__user">
+										<span class="kt-chat__datetime"><%= data.chat.body.time[7] %></span>
+										<a href="#" class="kt-chat__username"><%= data.chat.body.username[1] %></span></a>
+										<span class="kt-userpic kt-userpic--circle kt-userpic--sm">
+											<img src=<%= data.chat.body.img[1] %> alt="image">
+										</span>
+									</div>
+									<div class="kt-chat__text">
+										<%- data.chat.body.text[7] %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="kt-portlet__foot">
+						<div class="kt-chat__input">
+							<div class="kt-chat__editor">
+								<textarea placeholder=<%= data.chat.footer.placeholder %> style="height: 50px"></textarea>
+							</div>
+							<div class="kt-chat__toolbar">
+								<div class="kt_chat__tools">
+									<a href=<%= data.chat.footer.list.list[0] %>><i class="flaticon2-link"></i></a>
+									<a href=<%= data.chat.footer.list.list[1] %>><i class="flaticon2-photograph"></i></a>
+									<a href=<%= data.chat.footer.list.list[2] %>><i class="flaticon2-photo-camera"></i></a>
+								</div>
+								<div class="kt_chat__actions">
+									<button type="button" class="btn btn-brand btn-md  btn-font-sm btn-upper btn-bold kt-chat__reply"><%= data.chat.footer.btn %></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

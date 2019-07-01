@@ -1,3 +1,11 @@
+<!-- 
+    data: {
+        title: ["Metronic | Error Page - 2"],
+        err: ["404"],
+        text: ["Something went wrong here"]
+    }
+ -->
+
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--fixed kt-subheader--enabled kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 
     <!-- begin:: Page -->
@@ -5,10 +13,10 @@
         <div class="kt-grid__item kt-grid__item--fluid kt-grid  kt-error-v2" style="background-image: url(/assets/media//error/bg2.jpg);">
             <div class="kt-error_container">
                 <span class="kt-error_title2 kt-font-light">
-                    <h1>OOPS!</h1>
+                    <h1><%= data.err[1] %></h1>
                 </span>
                 <span class="kt-error_desc kt-font-light">
-                    Something went wrong here
+                    <%= data.text[1] %>
                 </span>
             </div>
         </div>
