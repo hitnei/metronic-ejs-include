@@ -1,15 +1,3 @@
-<!-- 
-	data: {
-		notifications: {
-			head: {
-				title: "User Notifications",
-				span: "23 new",
-			}
-		}
-	}
-
- -->
-
 
 <div class="kt-header__topbar-item dropdown">
 	<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px,0px" aria-expanded="true">
@@ -36,17 +24,17 @@ Use dot badge instead of animated pulse effect:
 				<h3 class="kt-head__title">
 					<%= data.notifications.head.title %>
 					&nbsp;
-					<span class="btn btn-success btn-sm btn-bold btn-font-md"><%= data.notifications.head.title %></span>
+					<span class="btn btn-success btn-sm btn-bold btn-font-md"><%= data.notifications.head.span %></span>
 				</h3>
 				<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true">Alerts</a>
+						<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true"><%= data.notifications.head.list[0] %></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Events</a>
+						<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false"><%= data.notifications.head.list[1] %></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Logs</a>
+						<a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false"><%= data.notifications.head.list[2] %></a>
 					</li>
 				</ul>
 			</div>
@@ -61,10 +49,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New order has been received
+									<%= data.notifications.body[0].title[0] %>
 								</div>
 								<div class="kt-notification__item-time">
-									2 hrs ago
+									<%= data.notifications.body[0].time[0] %>
 								</div>
 							</div>
 						</a>
@@ -74,10 +62,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer is registered
+									<%= data.notifications.body[0].title[1] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 hrs ago
+									<%= data.notifications.body[0].time[1] %>
 								</div>
 							</div>
 						</a>
@@ -87,10 +75,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Application has been approved
+									<%= data.notifications.body[0].title[2] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 hrs ago
+									<%= data.notifications.body[0].time[2] %>
 								</div>
 							</div>
 						</a>
@@ -100,10 +88,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New file has been uploaded
+									<%= data.notifications.body[0].title[3] %>
 								</div>
 								<div class="kt-notification__item-time">
-									5 hrs ago
+									<%= data.notifications.body[0].time[3] %>
 								</div>
 							</div>
 						</a>
@@ -113,10 +101,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New user feedback received
+									<%= data.notifications.body[0].title[4] %>
 								</div>
 								<div class="kt-notification__item-time">
-									8 hrs ago
+									<%= data.notifications.body[0].time[4] %>
 								</div>
 							</div>
 						</a>
@@ -126,10 +114,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									System reboot has been successfully completed
+									<%= data.notifications.body[0].title[5] %>
 								</div>
 								<div class="kt-notification__item-time">
-									12 hrs ago
+									<%= data.notifications.body[0].time[5] %>
 								</div>
 							</div>
 						</a>
@@ -139,10 +127,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New order has been placed
+									<%= data.notifications.body[0].title[6] %>
 								</div>
 								<div class="kt-notification__item-time">
-									15 hrs ago
+									<%= data.notifications.body[0].time[6] %>
 								</div>
 							</div>
 						</a>
@@ -152,10 +140,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Company meeting canceled
+									<%= data.notifications.body[0].title[7] %>
 								</div>
 								<div class="kt-notification__item-time">
-									19 hrs ago
+									<%= data.notifications.body[0].time[7] %>
 								</div>
 							</div>
 						</a>
@@ -165,10 +153,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New report has been received
+									<%= data.notifications.body[0].title[8] %>
 								</div>
 								<div class="kt-notification__item-time">
-									23 hrs ago
+									<%= data.notifications.body[0].time[8] %>
 								</div>
 							</div>
 						</a>
@@ -178,10 +166,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Finance report has been generated
+									<%= data.notifications.body[0].title[9] %>
 								</div>
 								<div class="kt-notification__item-time">
-									25 hrs ago
+									<%= data.notifications.body[0].time[9] %>
 								</div>
 							</div>
 						</a>
@@ -191,10 +179,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer comment recieved
+									<%= data.notifications.body[0].title[10] %>
 								</div>
 								<div class="kt-notification__item-time">
-									2 days ago
+									<%= data.notifications.body[0].time[10] %>
 								</div>
 							</div>
 						</a>
@@ -204,10 +192,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer is registered
+									<%= data.notifications.body[0].title[11] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 days ago
+									<%= data.notifications.body[0].time[11] %>
 								</div>
 							</div>
 						</a>
@@ -221,10 +209,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New report has been received
+									<%= data.notifications.body[1].title[0] %>
 								</div>
 								<div class="kt-notification__item-time">
-									23 hrs ago
+									<%= data.notifications.body[1].time[0] %>
 								</div>
 							</div>
 						</a>
@@ -234,10 +222,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Finance report has been generated
+									<%= data.notifications.body[1].title[1] %>
 								</div>
 								<div class="kt-notification__item-time">
-									25 hrs ago
+									<%= data.notifications.body[1].time[1] %>
 								</div>
 							</div>
 						</a>
@@ -247,10 +235,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New order has been received
+									<%= data.notifications.body[1].title[2] %>
 								</div>
 								<div class="kt-notification__item-time">
-									2 hrs ago
+									<%= data.notifications.body[1].time[2] %>
 								</div>
 							</div>
 						</a>
@@ -260,10 +248,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer is registered
+									<%= data.notifications.body[1].title[3] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 hrs ago
+									<%= data.notifications.body[1].time[3] %>
 								</div>
 							</div>
 						</a>
@@ -273,10 +261,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Application has been approved
+									<%= data.notifications.body[1].title[4] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 hrs ago
+									<%= data.notifications.body[1].time[4] %>
 								</div>
 							</div>
 						</a>
@@ -286,10 +274,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New file has been uploaded
+									<%= data.notifications.body[1].title[5] %>
 								</div>
 								<div class="kt-notification__item-time">
-									5 hrs ago
+									<%= data.notifications.body[1].time[5] %>
 								</div>
 							</div>
 						</a>
@@ -299,10 +287,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New user feedback received
+									<%= data.notifications.body[1].title[6] %>
 								</div>
 								<div class="kt-notification__item-time">
-									8 hrs ago
+									<%= data.notifications.body[1].time[6] %>
 								</div>
 							</div>
 						</a>
@@ -312,10 +300,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									System reboot has been successfully completed
+									<%= data.notifications.body[1].title[7] %>
 								</div>
 								<div class="kt-notification__item-time">
-									12 hrs ago
+									<%= data.notifications.body[1].time[7] %>
 								</div>
 							</div>
 						</a>
@@ -325,10 +313,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New order has been placed
+									<%= data.notifications.body[1].title[8] %>
 								</div>
 								<div class="kt-notification__item-time">
-									15 hrs ago
+									<%= data.notifications.body[1].time[8] %>
 								</div>
 							</div>
 						</a>
@@ -338,10 +326,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Company meeting canceled
+									<%= data.notifications.body[1].title[9] %>
 								</div>
 								<div class="kt-notification__item-time">
-									19 hrs ago
+									<%= data.notifications.body[1].time[9] %>
 								</div>
 							</div>
 						</a>
@@ -351,10 +339,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New report has been received
+									<%= data.notifications.body[1].title[10] %>
 								</div>
 								<div class="kt-notification__item-time">
-									23 hrs ago
+									<%= data.notifications.body[1].time[10] %>
 								</div>
 							</div>
 						</a>
@@ -364,10 +352,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									Finance report has been generated
+									<%= data.notifications.body[1].title[11] %>
 								</div>
 								<div class="kt-notification__item-time">
-									25 hrs ago
+									<%= data.notifications.body[1].time[11] %>
 								</div>
 							</div>
 						</a>
@@ -377,10 +365,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer comment recieved
+									<%= data.notifications.body[1].title[12] %>
 								</div>
 								<div class="kt-notification__item-time">
-									2 days ago
+									<%= data.notifications.body[1].time[12] %>
 								</div>
 							</div>
 						</a>
@@ -390,10 +378,10 @@ Use dot badge instead of animated pulse effect:
 							</div>
 							<div class="kt-notification__item-details">
 								<div class="kt-notification__item-title">
-									New customer is registered
+									<%= data.notifications.body[1].title[13] %>
 								</div>
 								<div class="kt-notification__item-time">
-									3 days ago
+									<%= data.notifications.body[1].time[13] %>
 								</div>
 							</div>
 						</a>
@@ -403,8 +391,7 @@ Use dot badge instead of animated pulse effect:
 					<div class="kt-grid kt-grid--ver" style="min-height: 200px;">
 						<div class="kt-grid kt-grid--hor kt-grid__item kt-grid__item--fluid kt-grid__item--middle">
 							<div class="kt-grid__item kt-grid__item--middle kt-align-center">
-								All caught up!
-								<br>No new notifications.
+								<%- data.notifications.body[2] %>
 							</div>
 						</div>
 					</div>
