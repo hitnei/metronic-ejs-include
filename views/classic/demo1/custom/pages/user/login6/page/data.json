@@ -1,0 +1,21 @@
+{
+  "signin": {
+    "logo": {
+      "src": "/assets/media/company-logos/logo-2.png"
+    },
+    "title": "Sign In To Admin",
+    "checkbox": "Remember me",
+    "forget": "Forget Password ?",
+    "button": "Sign In"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "desc": "Enter your details to create your account:",
+    "actions": ["Sign Up", "Cancel"]
+  },
+  "forget": {
+    "title": "Forgotten Password ?",
+    "desc": "Enter your email to reset your password:",
+    "actions": ["Request", "Cancel"]
+  }
+}

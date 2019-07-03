@@ -1,0 +1,90 @@
+<!-- list = {
+  title: 'Basic Pricing Table',
+  item1: [
+    price: 'Free',
+    subtitle: '1 End Product License',
+    desc: '<span>Lorem ipsum dolor sit amet edipiscing elit</span><span>sed do eiusmod elpors labore et dolore</span><span>magna siad enim aliqua</span>',
+    button: 'Get For Free'
+  ],
+  item2: [
+    price: '69<span class="kt-pricing-1__label">$</span>',
+    subtitle: 'Business License',
+    desc: '<span>Lorem ipsum dolor sit amet edipiscing elit</span><span>sed do eiusmod elpors labore et dolore</span><span>magna siad enim aliqua</span>',
+    button: 'Purchase'
+  ],
+  item3: [
+    price: '889<span class="kt-pricing-1__label">$</span>',
+    subtitle: 'Enterprice License',
+    desc: '<span>Lorem ipsum dolor sit amet edipiscing elit</span><span>sed do eiusmod elpors labore et dolore</span><span>magna siad enim aliqua</span>',
+    button: 'Purchase'
+  ],
+
+} -->
+
+<div class="kt-portlet">
+  <div class="kt-portlet__head">
+    <div class="kt-portlet__head-label">
+      <span class="kt-portlet__head-icon">
+        <i class="la la-puzzle-piece"></i>
+      </span>
+      <h3 class="kt-portlet__head-title">
+        <%= list.title %>
+      </h3>
+    </div>
+  </div>
+  <div class="kt-portlet__body">
+    <div class="kt-pricing-1 kt-pricing-1--fixed">
+      <div class="kt-pricing-1__items row">
+        <div class="kt-pricing-1__item col-lg-4">
+          <div class="kt-pricing-1__visual">
+            <div class="kt-pricing-1__hexagon1"></div>
+            <div class="kt-pricing-1__hexagon2"></div>
+            <span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-rocket"></i></span>
+          </div>
+          <span class="kt-pricing-1__price"><%= list.item1[price] %></span>
+          <h2 class="kt-pricing-1__subtitle"><%= list.item1[subtitle] %></h2>
+          <span class="kt-pricing-1__description">
+            <%= list.item1[desc] %>
+          </span>
+          <div class="kt-pricing-1__btn">
+            <button type="button" class="btn btn-pill  btn-brand btn-wide btn-uppercase btn-bolder btn-sm">
+              <%= list.item1[button] %>
+            </button>
+          </div>
+        </div>
+        <div class="kt-pricing-1__item col-lg-4">
+          <div class="kt-pricing-1__visual">
+            <div class="kt-pricing-1__hexagon1"></div>
+            <div class="kt-pricing-1__hexagon2"></div>
+            <span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-piggy-bank"></i></span>
+          </div>
+          <span class="kt-pricing-1__price"><%= list.item2[price] %></span>
+          <h2 class="kt-pricing-1__subtitle"><%= list.item2[subtitle] %></h2>
+          <span class="kt-pricing-1__description">
+            <<%= list.item2[desc] %>
+          </span>
+          <div class="kt-pricing-1__btn">
+            <button type="button"
+              class="btn btn-pill  btn-brand btn-wide btn-uppercase btn-bolder btn-sm"><%= list.item2[button] %></button>
+          </div>
+        </div>
+        <div class="kt-pricing-1__item col-lg-4">
+          <div class="kt-pricing-1__visual">
+            <div class="kt-pricing-1__hexagon1"></div>
+            <div class="kt-pricing-1__hexagon2"></div>
+            <span class="kt-pricing-1__icon kt-font-brand"><i class="fa flaticon-gift"></i></span>
+          </div>
+          <span class="kt-pricing-1__price"><%= list.item3[price] %></span>
+          <h2 class="kt-pricing-1__subtitle"><%= list.item3[subtitle] %></h2>
+          <span class="kt-pricing-1__description">
+            <%= list.item3[desc] %>
+          </span>
+          <div class="kt-pricing-1__btn">
+            <button type="button"
+              class="btn btn-pill  btn-brand btn-wide btn-uppercase btn-bolder btn-sm"><%= list.item3[button] %></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

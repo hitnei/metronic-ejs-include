@@ -1,0 +1,104 @@
+{
+  "wAct": {
+    "headTitle": "Activity",
+    "dropdown": {
+      "title": "Export",
+      "content": [
+        {
+          "subtitle": "Finance",
+          "option": {
+            "key1": "Statistics",
+            "key2": "Events",
+            "key3": "Reports"
+          }
+        },
+        {
+          "subtitle": "HR",
+          "option": {
+            "key1": "Notifications",
+            "key2": "Files"
+          }
+        }
+      ]
+    }
+  },
+  "wActItem": [
+    {
+      "subtitle": "Delivered",
+      "desc": "15 New Paskages"
+    },
+    {
+      "subtitle": "Ordered",
+      "desc": "72 New Items"
+    },
+    {
+      "subtitle": "Reported",
+      "desc": "72 Support Cases"
+    },
+    {
+      "subtitle": "Arrived",
+      "desc": "34 Upgraded Boxes"
+    }
+  ],
+  "wInbound": {
+    "title": "Inbound Bandwidth",
+    "dropdown": {
+      "title": "Export",
+      "content": [
+        "Reports",
+        "  Messages",
+        "Charts",
+        "Members",
+        "Settings"
+      ]
+    },
+    "content": {
+      "number": "670+",
+      "desc": "Successful transactions"
+    }
+  },
+  "wOutbound": {
+    "title": "Outbound Bandwidth",
+    "dropdown": {
+      "title": "Download",
+      "content": [
+        "Reports",
+        "Messages",
+        "Charts",
+        "Members",
+        "Settings"
+      ]
+    },
+    "content": {
+      "number": "1340+",
+      "desc": "Completed orders"
+    }
+  },
+  "portlet": {
+    "title": "Recent Activities",
+    "nav": {
+      "title": "Export Options",
+      "option": [
+        "Activity",
+        "FAQ",
+        "Settings",
+        "Support"
+      ],
+      "optionNumber": [
+        "",
+        "",
+        "",
+        "5"
+      ],
+      "footer": [
+        "Upgrade plan",
+        "Learn more"
+      ]
+    }
+  },
+  "timeline": {
+    "item": [
+      "10:00"
+    ]
+  }
+}

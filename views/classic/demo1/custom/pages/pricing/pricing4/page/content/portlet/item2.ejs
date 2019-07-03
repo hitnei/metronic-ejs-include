@@ -1,0 +1,69 @@
+<!-- head = {
+  subtitle: 'For Business',
+  features: '<span>Lorem ipsum dolor adipiscing</span><br>
+            <span>do eiusmod tempors</span>',
+  price: '<span class="kt-pricing-4__price">169</span>
+          <span class="kt-pricing-4__label">$</span>',
+  button: 'Purchase'
+} -->
+<!-- mobile = {
+  item1: '<span>Number Of Users</span>
+          <span>Up to 10k</span>',
+  item2: '<span>Domains</span>
+          <span>1</span>',
+  item3: '<span>Projects</span>
+          <span>5</span>',
+  item4: '<span>Storage</span>
+          <span>5GB</span>',
+  item5: '<span>Supporet</span>
+          <span>No</span>',
+  item6: '<span>Tutorials</span>
+          <span>No</span>',
+  item7: '<span>Cancelation</span>
+          <span>Yes</span>',
+  button: 'Purchase
+} -->
+
+<div class="kt-pricing-4__top-item">
+  <span class="kt-pricing-4__icon kt-font-info">
+    <i class="fa flaticon-confetti"></i>
+  </span>
+  <h2 class="kt-pricing-4__subtitle"><%= head.subtitle %></h2>
+  <div class="kt-pricing-4__features">
+    <%= head.features %>
+  </div>
+  <%= head.price %>
+  <div class="kt-pricing-4__btn">
+    <button type="button" class="btn btn-pill  btn-info btn-upper btn-bold"><%= head.button %></button>
+  </div>
+
+  <!--begin::Mobile Pricing Table-->
+  <div class="kt-pricing-4__top-items-mobile">
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item1 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item2 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item3 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item4 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item5 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item6 %>
+    </div>
+    <div class="kt-pricing-4__top-item-mobile">
+      <%= mobile.item7 %>
+    </div>
+    <div class="kt-pricing-4__top-btn">
+      <button type="button" class="btn btn-pill  btn-info btn-upper btn-bold"><%= mobile.button %></button>
+    </div>
+  </div>
+
+  <!--end::Mobile Pricing Table-->
+</div>

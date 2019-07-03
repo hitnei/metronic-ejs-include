@@ -1,0 +1,50 @@
+<div class="kt-login__right">
+  <div class="kt-login__wrapper">
+    <div class="kt-login__signin">
+      <div class="kt-login__head">
+        <h3 class="kt-login__title"><%= right.signin.title %></h3>
+      </div>
+      <div class="kt-login__form">
+        <form class="kt-form" action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Username" name="username" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <input class="form-control form-control-last" type="Password" placeholder="Password" name="password">
+          </div>
+          <div class="row kt-login__extra">
+            <div class="col kt-align-left">
+              <label class="kt-checkbox">
+                <input type="checkbox" name="remember"> <%= right.signin.checkbox %>
+                <span></span>
+              </label>
+            </div>
+            <div class="col kt-align-right">
+              <a href="javascript:;" id="kt_login_forgot" class="kt-link"><%= right.signin.forget %></a>
+            </div>
+          </div>
+          <div class="kt-login__actions">
+            <button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate"><%= right.signin.button %></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="kt-login__forgot">
+      <div class="kt-login__head">
+        <h3 class="kt-login__title"><%= right.forget.title %></h3>
+        <div class="kt-login__desc"><%= right.forget.desc %></div>
+      </div>
+      <div class="kt-login__form">
+        <form class="kt-form" action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off">
+          </div>
+          <div class="kt-login__actions">
+            <button id="kt_login_forgot_submit" class="btn btn-brand btn-pill btn-elevate"><%= right.forget.actions[0] %></button>
+            <button id="kt_login_forgot_cancel" class="btn btn-outline-brand btn-pill"><%= right.forget.actions[1] %></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

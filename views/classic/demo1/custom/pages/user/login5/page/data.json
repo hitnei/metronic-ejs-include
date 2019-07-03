@@ -1,0 +1,26 @@
+{
+  "background": {
+    "url": "/assets/media//bg/bg-3.jpg"
+  },
+  "left": {
+    "logo": {
+      "src": "/assets/media/logos/logo-5.png"
+    },
+    "title": "JOIN OUR GREAT COMMUNITY",
+    "desc": "The ultimate Bootstrap & Angular 6 admin theme framework for next generation web apps.",
+    "button": "Get An Account"
+  },
+  "right": {
+    "signin": {
+      "title": "Login To Your Account",
+      "checkbox": "Remember me",
+      "forget": "Forget Password ?",
+      "button": "Sign In"
+    },
+    "forget": {
+      "title": "Forgotten Password ?",
+      "desc": "Enter your email to reset your password:",
+      "actions": ["Request", "Cancel"]
+    }
+  }
+}

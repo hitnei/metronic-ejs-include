@@ -1,0 +1,102 @@
+<!-- head = {
+  title: 'Pricing Table'
+} -->
+<!-- list = {
+  content: [
+    item1: [
+      title: 'Basic',
+      price: 'Free',
+      desc: '<span>Lorem ipsum dolor sit amet adipiscing elit</span>
+            <span>sed do eiusmod tempors labore et dolore</span>
+            <span>magna siad enim aliqua</span>',
+      button: 'Download'
+    ],
+    item2: [
+      title: 'Professional',
+      price: '<span class="kt-pricing-3__label kt-font-brand kt-opacity-7">$</span>
+              <span class="kt-pricing-3__number kt-font-brand">29</span>
+              <span class="kt-pricing-3__text kt-font-brand kt-opacity-7">/&nbsp;&nbsp;Per Installation</span>',
+      desc: '<span>Lorem ipsum dolor sit amet adipiscing elit</span>
+            <span>sed do eiusmod tempors labore et dolore</span>
+            <span>magna siad enim aliqua</span>',
+      button: 'Purchase'
+    ],
+    item3: [
+      title: 'Extended',
+      price: '<span class="kt-pricing-3__label">$</span>
+              <span class="kt-pricing-3__number">99</span>
+              <span class="kt-pricing-3__text">/&nbsp;&nbsp;Per Installation</span>',
+      desc: '<span>Lorem ipsum dolor sit amet adipiscing elit</span>
+            <span>sed do eiusmod tempors labore et dolore</span>
+            <span>magna siad enim aliqua</span>',
+      button: 'Purchase'
+    ]
+  ]
+} -->
+
+<div class="kt-portlet">
+  <div class="kt-portlet__head">
+    <div class="kt-portlet__head-label">
+      <span class="kt-portlet__head-icon">
+        <i class="la la-puzzle-piece"></i>
+      </span>
+      <h3 class="kt-portlet__head-title">
+        <%= head.title %>
+      </h3>
+    </div>
+  </div>
+  <div class="kt-portlet__body">
+    <div class="kt-pricing-3 kt-pricing-3--fixed">
+      <div class="kt-pricing-3__items">
+        <div class="row row-no-padding">
+          <div class="kt-pricing-3__item col-lg-4">
+            <div class="kt-pricing-3__wrapper">
+              <h3 class="kt-pricing-3__title"><%= list.content[item1[title]] %></h3>
+              <span
+                class="kt-pricing-3__price kt-pricing-3__price--padding"><%= list.content[item1[price]] %></span><br>
+              <span class="kt-pricing-3__description">
+                <%= list.content[item1[desc]] %>
+              </span>
+              <div class="kt-pricing-3__btn">
+                <button type="button"
+                  class="btn btn-pill  btn-brand btn-wide btn-upper btn-bold"><%= list.content[item1[button]] %></button>
+              </div>
+            </div>
+          </div>
+          <div class="kt-pricing-3__item kt-pricing-3__item--brand kt-bg-brand col-lg-4">
+            <div class="kt-pricing-3__wrapper">
+              <h3 class="kt-pricing-3__title kt-font-light"><%= list.content[item2[title]] %></h3>
+              <span class="kt-pricing-3__price">
+                <%= list.content[item2[price]] %>
+              </span>
+              <br>
+              <span class="kt-pricing-3__description">
+                <%= list.content[item2[desc]] %>
+              </span>
+              <div class="kt-pricing-3__btn">
+                <button type="button"
+                  class="btn btn-pill btn-light btn-wide btn-upper btn-bold"><%= list.content[item2[button]] %></button>
+              </div>
+            </div>
+          </div>
+          <div class="kt-pricing-3__item col-lg-4">
+            <div class="kt-pricing-3__wrapper">
+              <h3 class="kt-pricing-3__title"><%= list.content[item3[title]] %></h3>
+              <span class="kt-pricing-3__price">
+                <%= list.content[item3[price]] %>
+              </span>
+              <br>
+              <span class="kt-pricing-3__description">
+                <%= list.content[item3[desc]] %>
+              </span>
+              <div class="kt-pricing-3__btn">
+                <button type="button"
+                  class="btn btn-pill  btn-brand btn-wide btn-upper btn-bold"><%= list.content[item3[button]] %></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

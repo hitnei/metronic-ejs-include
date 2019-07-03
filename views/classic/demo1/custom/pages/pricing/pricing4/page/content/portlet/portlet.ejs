@@ -1,0 +1,44 @@
+<!-- head = {
+  title: 'Transparent & Simple Pricing'
+} -->
+
+<div class="kt-portlet">
+  <div class="kt-portlet__body kt-portlet__body--fit">
+
+    <!--begin::Basic Pricing 4-->
+    <div class="kt-pricing-4">
+      <div class="kt-pricing-4__top">
+        <div class="kt-pricing-4__top-container kt-pricing-4__top-container--fixed">
+          <div class="kt-pricing-4__top-header">
+            <div class="kt-pricing-4__top-title kt-font-light">
+              <h1><%= head.title %></h1>
+            </div>
+          </div>
+          <div class="kt-pricing-4__top-body">
+
+            <!--begin::Pricing Items-->
+            <div class="kt-pricing-4__top-items">
+
+              <!--begin::Pricing Item-->
+              <% include item1 %>
+              <!--end::Pricing Items-->
+
+              <!--begin::Pricing Items-->
+              <% include item2 %>
+              <!--end::Pricing Items-->
+
+              <!--begin::Pricing Items-->
+              <% include item3 %>
+              <!--end::Pricing Items-->
+            </div>
+
+            <!--end::Pricing Items-->
+          </div>
+        </div>
+      </div>
+      <% include table %>
+    </div>
+
+    <!--end::Basic Pricing 4-->
+  </div>
+</div>

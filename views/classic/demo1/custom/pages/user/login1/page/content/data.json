@@ -1,0 +1,20 @@
+{
+	"background": {
+		"url": "/assets/media//bg/bg-4.jpg"
+	},
+	"logo": {
+		"src": "/assets/media/logos/logo-4.png"
+	},
+	"middle": {
+		"title": "Welcome to Metronic!",
+		"subtitle": "The ultimate Bootstrap & Angular 6 admin theme framework for next generation web apps."
+	},
+	"info": {
+		"copyRight": "&copy 2018 Metronic",
+		"menu": [
+			"Privacy",
+			"Legal",
+			"Contact"
+		]
+	}
+}
