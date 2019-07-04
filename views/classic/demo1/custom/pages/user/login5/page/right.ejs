@@ -2,7 +2,7 @@
   <div class="kt-login__wrapper">
     <div class="kt-login__signin">
       <div class="kt-login__head">
-        <h3 class="kt-login__title"><%= right.signin.title %></h3>
+        <h3 class="kt-login__title">Login To Your Account</h3>
       </div>
       <div class="kt-login__form">
         <form class="kt-form" action="">
@@ -15,24 +15,24 @@
           <div class="row kt-login__extra">
             <div class="col kt-align-left">
               <label class="kt-checkbox">
-                <input type="checkbox" name="remember"> <%= right.signin.checkbox %>
+                <input type="checkbox" name="remember"> Remember me
                 <span></span>
               </label>
             </div>
             <div class="col kt-align-right">
-              <a href="javascript:;" id="kt_login_forgot" class="kt-link"><%= right.signin.forget %></a>
+              <a href="javascript:;" id="kt_login_forgot" class="kt-link">Forget Password ?</a>
             </div>
           </div>
           <div class="kt-login__actions">
-            <button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate"><%= right.signin.button %></button>
+            <button id="kt_login_signin_submit" class="btn btn-brand btn-pill btn-elevate">Sign In</button>
           </div>
         </form>
       </div>
     </div>
     <div class="kt-login__forgot">
       <div class="kt-login__head">
-        <h3 class="kt-login__title"><%= right.forget.title %></h3>
-        <div class="kt-login__desc"><%= right.forget.desc %></div>
+        <h3 class="kt-login__title">Forgotten Password ?</h3>
+        <div class="kt-login__desc">Enter your email to reset your password:</div>
       </div>
       <div class="kt-login__form">
         <form class="kt-form" action="">
@@ -40,8 +40,8 @@
             <input class="form-control" type="text" placeholder="Email" name="email" id="kt_email" autocomplete="off">
           </div>
           <div class="kt-login__actions">
-            <button id="kt_login_forgot_submit" class="btn btn-brand btn-pill btn-elevate"><%= right.forget.actions[0] %></button>
-            <button id="kt_login_forgot_cancel" class="btn btn-outline-brand btn-pill"><%= right.forget.actions[1] %></button>
+            <button id="kt_login_forgot_submit" class="btn btn-brand btn-pill btn-elevate">Request</button>
+            <button id="kt_login_forgot_cancel" class="btn btn-outline-brand btn-pill">Cancel</button>
           </div>
         </form>
       </div>
