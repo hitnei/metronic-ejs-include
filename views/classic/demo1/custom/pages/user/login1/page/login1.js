@@ -1,9 +1,9 @@
-const BaseView = require('../../../../../../viewController/baseView');
+const BaseView = require('../../../../../../../viewController/baseView');
 
-class Section1 extends BaseView {
+class Login1 extends BaseView {
   constructor() {
     super()
-    this.fileName = 'section1'
+    this.fileName = 'login1'
   }
   getFileName() {
     return this.fileName;
@@ -23,4 +23,4 @@ class Section1 extends BaseView {
     return defaultVariables;
   }
 }
-module.exports = Section1;
+module.exports = Login1;

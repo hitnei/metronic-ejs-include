@@ -3,7 +3,7 @@
   "background": {
     "url": "/assets/media//bg/bg-3.jpg"
   },
-  "left": {
+  "aside": {
     "logo": {
       "src": "/assets/media/logos/logo-5.png"
     },

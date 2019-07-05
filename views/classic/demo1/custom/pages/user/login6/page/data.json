@@ -1,4 +1,7 @@
 {
+  "logo": {
+    "src": "/assets/media/company-logos/logo-2.png"
+  },
   "aside": {
     "title": "Join Our Community",
     "desc": "Lorem ipsum dolor sit amet, coectetuer adipiscing<br>elit sed diam nonummy et nibh euismod"

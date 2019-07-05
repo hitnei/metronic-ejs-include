@@ -98,7 +98,35 @@
   },
   "timeline": {
     "item": [
-      "10:00"
+      {
+        "time": "10:00",
+        "text": "Lorem ipsum dolor sit amit,consectetur eiusmdd tempor <br> incididunt ut labore et dolore magna"
+      },
+      {
+        "time": "12:45",
+        "text": "AEOL Meeting With",
+        "src": ["/assets/media/users/100_4.jpg", "/assets/media/users/100_13.jpg", "/assets/media/users/100_11.jpg", "/assets/media/users/100_14.jpg"]
+      },
+      {
+        "time": "14:00",
+        "text": "Make Deposit <a href=\"#\" class=\"kt-link kt-link--brand kt-font-bolder\">USD 700</a> To ESL."
+      },
+      {
+        "time": "16:00",
+        "text": "Lorem ipsum dolor sit amit,consectetur eiusmdd tempor <br> incididunt ut labore et dolore magna elit enim at minim <br> veniam quis nostrud"
+      },
+      {
+        "time": "17:00",
+        "text": "Placed a new order in <a href=\"#\" class=\"kt-link kt-link--brand kt-font-bolder\">SIGNATURE MOBILE</a> marketplace."
+      },
+      {
+        "time": "17:00",
+        "text": "Received a new feedback on <a href=\"#\" class=\"kt-link kt-link--brand kt-font-bolder\">FinancePro App</a> product."
+      },
+      {
+        "time": "15:30",
+        "text": "New notification message has been received on <a href=\"#\" class=\"kt-link kt-link--brand kt-font-bolder\">LoopFin Pro</a> product."
+      }
     ]
   }
 }
