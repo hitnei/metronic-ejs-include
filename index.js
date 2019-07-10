@@ -1,9 +1,17 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+var indexRouter = require('./router/index');
+app.use('/', indexRouter);
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-
 
 app.get('/asd', function (req, res) {
     // const data = require('./views/classic/demo1/index/page/content/section1/section1');
@@ -224,3 +232,12 @@ app.get('/error', function (req, res) {
 
 app.listen(8080);
 console.log('8080 is the magic port');
+
+//connect to mongodb
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/temp', { useNewUrlParser: true, useFindAndModify: false });
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+    console.log('Da ket noi den mongodb');
+});
