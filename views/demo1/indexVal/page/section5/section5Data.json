@@ -1,0 +1,53 @@
+{
+    "col4":{
+       "title":"Tasks",
+       "list":[
+          "Today",
+          "Week",
+          "Month"
+       ]
+    },
+    "col8":{
+       "title":"Notifications",
+       "list":[
+          "Latest",
+          "Week",
+          "Month"
+       ]
+    },
+    "col12":{
+       "title":"Support Tickets",
+       "list":[
+          {
+             "text":"Export Options",
+             "title":"Click to learn more..."
+          },
+          {
+             "text":"Activity",
+             "link":"#"
+          },
+          {
+             "text":"FAQ",
+             "link":"#"
+          },
+          {
+             "text":"Settings",
+             "link":"#"
+          },
+          {
+             "text":"Support",
+             "link":"#",
+             "badge":"5"
+          },
+          {
+             "text":"Upgrade plan",
+             "link":"#"
+          },
+          {
+             "text":"Learn more",
+             "link":"#",
+             "title":"Click to learn more..."
+          }
+       ]
+    }
+ }

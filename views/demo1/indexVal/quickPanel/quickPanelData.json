@@ -1,0 +1,79 @@
+{
+    "head":[
+       "Notifications",
+       "Audit Logs",
+       "Settings"
+    ],
+    "body":[
+       {
+          "title":[
+             "New order has been received",
+             "New customer is registered",
+             "Application has been approved",
+             "New file has been uploaded",
+             "New user feedback received",
+             "System reboot has been successfully completed",
+             "New order has been placed",
+             "Company meeting canceled",
+             "New report has been received",
+             "Finance report has been generated",
+             "New customer comment recieved",
+             "New customer is registered"
+          ],
+          "time":[
+             "2 hrs ago",
+             "3 hrs ago",
+             "3 hrs ago",
+             "5 hrs ago",
+             "8 hrs ago",
+             "12 hrs ago",
+             "15 hrs ago",
+             "19 hrs ago",
+             "23 hrs ago",
+             "25 hrs ago",
+             "2 days ago",
+             "3 days ago"
+          ]
+       },
+       {
+          "title":[
+             "5 new user generated report",
+             "2 new items submited",
+             "79 PSD files generated",
+             "$2900 worth producucts sold",
+             "4.5h-avarage response time",
+             "Database server is down",
+             "System report has been generated",
+             "4.5h-avarage response time"
+          ],
+          "desc":[
+             "Reports based on sales",
+             "by Grog John",
+             "Reports based on sales",
+             "Total 234 items",
+             "Fostest is Barry",
+             "10 mins ago",
+             "Fostest is Barry",
+             "Fostest is Barry"
+          ]
+       },
+       {
+          "head":[
+             "Customer Care",
+             "Reports",
+             "Memebers"
+          ],
+          "list":[
+             "Enable Notifications:",
+             "Enable Case Tracking:",
+             "Support Portal:",
+             "Generate Reports:",
+             "Enable Report Export:",
+             "Allow Data Collection:",
+             "Enable Member singup:",
+             "Allow User Feedbacks:",
+             "Enable Customer Portal:"
+          ]
+       }
+    ]
+ }

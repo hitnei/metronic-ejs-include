@@ -1,0 +1,25 @@
+[
+    {
+       "title":"Daily Sales",
+       "desc":"Check out each collumn for more details"
+    },
+    {
+       "title":"Profit Share",
+       "desc":"Profit Share between customers",
+       "number":"45",
+       "stats":[
+          "37% Sport Tickets",
+          "47% Business Events",
+          "19% Others"
+       ]
+    },
+    {
+       "title":"Revenue Change",
+       "desc":"Revenue change breakdown by cities",
+       "stats":[
+          "+10% New York",
+          "-7% London",
+          "+20% California"
+       ]
+    }
+ ]

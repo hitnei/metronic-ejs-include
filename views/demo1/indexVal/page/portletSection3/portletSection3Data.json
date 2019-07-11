@@ -1,0 +1,22 @@
+{
+    "img":"/assets/media//products/product27.jpg",
+    "const":[
+       "Author:",
+       "Released:",
+       "sales",
+       "votes"
+    ],
+    "section":{
+       "title":"Great Logo Design",
+       "link":"#",
+       "desc":"Metronic admin themes.",
+       "info":[
+          "Keenthemes",
+          "23.08.17"
+       ]
+    },
+    "content":{
+       "Released":"19,200",
+       "sales":"1046"
+    }
+ }

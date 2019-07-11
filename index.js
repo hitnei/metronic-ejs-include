@@ -1083,6 +1083,144 @@ app.get('/dashboard', function(req, res){
     })
 });
 
+
+app.get('/dashboardVal', function(req, res){
+
+    var returnData = [];
+
+    // head
+    var BaseView = require('./views/demo1/indexVal/head/head');
+    var data = new BaseView();
+    returnData['head'] = data.generateView();
+
+    // headerMobile
+    var BaseView = require('./views/demo1/indexVal/page/headerMobile/headerMobile');
+    var data = new BaseView();
+    returnData['headerMobile'] = data.generateView();
+
+    //asideMenu
+    var BaseView = require('./views/demo1/indexVal/page/asideMenu/asideMenu');
+    var data = new BaseView();
+    returnData['asideMenu'] = data.generateView();
+    
+    //headerMenu
+    var BaseView = require('./views/demo1/indexVal/page/headerMenu/headerMenu');
+    var data = new BaseView();
+    returnData['headerMenu'] = data.generateView();
+    
+    //notifications
+    var BaseView = require('./views/demo1/indexVal/page/notifications/notifications');
+    var data = new BaseView();
+    returnData['notifications'] = data.generateView();
+    
+    //quickActions
+    var BaseView = require('./views/demo1/indexVal/page/quickActions/quickActions');
+    var data = new BaseView();
+    returnData['quickActions'] = data.generateView();
+    
+    //myCart
+    var BaseView = require('./views/demo1/indexVal/page/myCart/myCart');
+    var data = new BaseView();
+    returnData['myCart'] = data.generateView();
+    
+    //languageBar
+    var BaseView = require('./views/demo1/indexVal/page/languageBar/languageBar');
+    var data = new BaseView();
+    returnData['languageBar'] = data.generateView();
+    
+    //userBar
+    var BaseView = require('./views/demo1/indexVal/page/userBar/userBar');
+    var data = new BaseView();
+    returnData['userBar'] = data.generateView();
+    
+    //contentHead
+    var BaseView = require('./views/demo1/indexVal/page/contentHead/contentHead');
+    var data = new BaseView();
+    returnData['contentHead'] = data.generateView();
+    
+    //footer
+    var BaseView = require('./views/demo1/indexVal/page/footer/footer');
+    var data = new BaseView();
+    returnData['footer'] = data.generateView();
+    
+    //quickPanel
+    var BaseView = require('./views/demo1/indexVal/quickPanel/quickPanel');
+    var data = new BaseView();
+    returnData['quickPanel'] = data.generateView();
+    
+    //stickyToolbar
+    var BaseView = require('./views/demo1/indexVal/stickyToolbar/stickyToolbar');
+    var data = new BaseView();
+    returnData['stickyToolbar'] = data.generateView();
+    
+    //demoPanel
+    var BaseView = require('./views/demo1/indexVal/demoPanel/demoPanel');
+    var data = new BaseView();
+    returnData['demoPanel'] = data.generateView();
+    
+    //chat
+    var BaseView = require('./views/demo1/indexVal/chat/chat');
+    var data = new BaseView();
+    returnData['chat'] = data.generateView();
+    
+    //portletSection1
+    var BaseView = require('./views/demo1/indexVal/page/portletSection1/portletSection1');
+    var data = new BaseView();
+    returnData['portletSection1'] = data.generateView();
+    
+    //portletSection3
+    var BaseView = require('./views/demo1/indexVal/page/portletSection3/portletSection3');
+    var data = new BaseView();
+    returnData['portletSection3'] = data.generateView();
+    
+    //portletSection5
+    var BaseView = require('./views/demo1/indexVal/page/portletSection5/portletSection5');
+    var data = new BaseView();
+    returnData['portletSection5'] = data.generateView();
+    
+    //portletSection31
+    var BaseView = require('./views/demo1/indexVal/page/portletSection31/portletSection31');
+    var data = new BaseView();
+    returnData['portletSection31'] = data.generateView();
+    
+    //portletSection51
+    var BaseView = require('./views/demo1/indexVal/page/portletSection51/portletSection51');
+    var data = new BaseView();
+    returnData['portletSection51'] = data.generateView();
+    
+    //portletSection52
+    var BaseView = require('./views/demo1/indexVal/page/portletSection52/portletSection52');
+    var data = new BaseView();
+    returnData['portletSection52'] = data.generateView();
+    
+    //section1
+    var BaseView = require('./views/demo1/indexVal/page/section1/section1');
+    var data = new BaseView();
+    returnData['section1'] = data.generateView();
+    
+    //section2
+    var BaseView = require('./views/demo1/indexVal/page/section2/section2');
+    var data = new BaseView();
+    returnData['section2'] = data.generateView();
+    
+    //section3
+    var BaseView = require('./views/demo1/indexVal/page/section3/section3');
+    var data = new BaseView();
+    returnData['section3'] = data.generateView();
+    
+    //section4
+    var BaseView = require('./views/demo1/indexVal/page/section4/section4');
+    var data = new BaseView();
+    returnData['section4'] = data.generateView();
+
+    //section5
+    var BaseView = require('./views/demo1/indexVal/page/section5/section5');
+    var data = new BaseView();
+    returnData['section5'] = data.generateView();
+
+    res.render('./demo1/indexVal.ejs', returnData);
+});
+
 // app.get('/error', function(req, res) {
 //     res.render("./demo1/custom/pages/error/error-6.ejs");
 // });

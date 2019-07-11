@@ -1,0 +1,21 @@
+{
+    "copyright":{
+       "link":"http://keenthemes.com/metronic",
+       "text":"Keenthemes",
+       "year":"2019"
+    },
+    "menu":[
+       {
+          "link":"http://keenthemes.com/metronic",
+          "text":"About"
+       },
+       {
+          "link":"http://keenthemes.com/metronic",
+          "text":"Team"
+       },
+       {
+          "link":"http://keenthemes.com/metronic",
+          "text":"Contact"
+       }
+    ]
+ }

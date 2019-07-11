@@ -1,0 +1,71 @@
+{
+    "col8":{
+       "head":{
+          "title":"Exclusive Datatable Plugin",
+          "dropdown":[
+             {
+                "text":"Export Options",
+                "title":"Click to learn more..."
+             },
+             {
+                "text":"Activity",
+                "link":"#"
+             },
+             {
+                "text":"FAQ",
+                "link":"#"
+             },
+             {
+                "text":"Settings",
+                "link":"#"
+             },
+             {
+                "text":"Support",
+                "link":"#",
+                "badge":"5"
+             },
+             {
+                "text":"Upgrade plan",
+                "link":"#"
+             },
+             {
+                "text":"Learn more",
+                "link":"#",
+                "title":"Click to learn more..."
+             }
+          ]
+       },
+       "body":{
+ 
+       }
+    },
+    "col12":{
+       "head":{
+          "title":"Introducing New Feature",
+          "btn":{
+             "link":"#",
+             "text":"Recent"
+          }
+       },
+       "body":{
+          "content":{
+             "img":"/assets/media//users/user1.jpg",
+             "username":{
+                "link":"#",
+                "text":"Anna Krox"
+             },
+             "time":"UX/UI Designer, Google",
+             "number":"18",
+             "cmt":{
+                "link":"#",
+                "text":"Comments"
+             }
+          },
+          "text":"Lorem Ipsum is simply dummy text of the printing and typesetting scrambled a type specimen book text of the dummy text of the printing printing and typesetting industry scrambled dummy text of the printing.",
+          "btn":{
+             "link":"#",
+             "text":"Read More..."
+          }
+       }
+    }
+ }

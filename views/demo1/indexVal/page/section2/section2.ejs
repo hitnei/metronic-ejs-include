@@ -1,0 +1,123 @@
+
+<div class="row">
+	<div class="col-xl-8">
+		<div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile ">
+			<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--noborder kt-portlet__head--break-sm">
+				<div class="kt-portlet__head-label">
+					<h3 class="kt-portlet__head-title">
+						<%= section2.col8.head.title %>
+					</h3>
+				</div>
+				<div class="kt-portlet__head-toolbar">
+						<div class="dropdown dropdown-inline">
+						<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="flaticon-more-1"></i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-md dropdown-menu-fit">
+
+							<!--begin::Nav-->
+							<ul class="kt-nav">
+								<li class="kt-nav__head">
+									<%= section2.col8.head.dropdown[0].text %>
+									<i class="flaticon2-information" data-toggle="kt-tooltip" data-placement="right" title=<%= section2.col8.head.dropdown[0].title %>></i>
+								</li>
+								<li class="kt-nav__separator"></li>
+								<li class="kt-nav__item">
+									<a href=<%= section2.col8.head.dropdown[1].link %> class="kt-nav__link">
+										<i class="kt-nav__link-icon flaticon2-drop"></i>
+										<span class="kt-nav__link-text"><%= section2.col8.head.dropdown[1].text %></span>
+									</a>
+								</li>
+								<li class="kt-nav__item">
+									<a href=<%= section2.col8.head.dropdown[2].link %> class="kt-nav__link">
+										<i class="kt-nav__link-icon flaticon2-calendar-8"></i>
+										<span class="kt-nav__link-text"><%= section2.col8.head.dropdown[2].text %></span>
+									</a>
+								</li>
+								<li class="kt-nav__item">
+									<a href=<%= section2.col8.head.dropdown[3].link %> class="kt-nav__link">
+										<i class="kt-nav__link-icon flaticon2-link"></i>
+										<span class="kt-nav__link-text"><%= section2.col8.head.dropdown[3].text %></span>
+									</a>
+								</li>
+								<li class="kt-nav__item">
+									<a href=<%= section2.col8.head.dropdown[4].link %> class="kt-nav__link">
+										<i class="kt-nav__link-icon flaticon2-new-email"></i>
+										<span class="kt-nav__link-text"><%= section2.col8.head.dropdown[4].text %></span>
+										<span class="kt-nav__link-badge">
+											<span class="kt-badge kt-badge--success"><%= section2.col8.head.dropdown[4].badge %></span>
+										</span>
+									</a>
+								</li>
+								<li class="kt-nav__separator"></li>
+								<li class="kt-nav__foot">
+									<a class="btn btn-label-danger btn-bold btn-sm" href=<%= section2.col8.head.dropdown[5].link %>><%= section2.col8.head.dropdown[5].text %></a>
+									<a class="btn btn-clean btn-bold btn-sm" href=<%= section2.col8.head.dropdown[6].link %> data-toggle="kt-tooltip" data-placement="right" title=<%= section2.col8.head.dropdown[6].title %>><%= section2.col8.head.dropdown[6].text %></a>
+								</li>
+							</ul>
+
+							<!--end::Nav-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="kt-portlet__body kt-portlet__body--fit">
+
+				<!--begin: Datatable -->
+				<div class="kt-datatable" id="kt_datatable_latest_orders"></div>
+
+				<!--end: Datatable -->
+			</div>
+		</div>
+	</div>
+	<div class="col-xl-4">
+
+		<!--begin:: Widgets/Blog-->
+		<div class="kt-portlet kt-portlet--height-fluid kt-widget19">
+			<div class="kt-portlet__body kt-portlet__body--fit kt-portlet__body--unfill">
+				<div class="kt-widget19__pic kt-portlet-fit--top kt-portlet-fit--sides" style="min-height: 300px; background-image: url(/assets/media//products/product4.jpg)">
+					<h3 class="kt-widget19__title kt-font-light">
+						<%= section2.col12.head.title %>
+					</h3>
+					<div class="kt-widget19__shadow"></div>
+					<div class="kt-widget19__labels">
+						<a href=<%= section2.col12.head.btn.link %> class="btn btn-label-light-o2 btn-bold btn-sm "><%= section2.col12.head.btn.text %></a>
+					</div>
+				</div>
+			</div>
+			<div class="kt-portlet__body">
+				<div class="kt-widget19__wrapper">
+					<div class="kt-widget19__content">
+						<div class="kt-widget19__userpic">
+							<img src=<%= section2.col12.body.content.img %> alt="">
+						</div>
+						<div class="kt-widget19__info">
+							<a href=<%= section2.col12.body.content.username.link %> class="kt-widget19__username">
+								<%= section2.col12.body.content.username.text %>
+							</a>
+							<span class="kt-widget19__time">
+								<%= section2.col12.body.content.time %>
+							</span>
+						</div>
+						<div class="kt-widget19__stats">
+							<span class="kt-widget19__number kt-font-brand">
+								<%= section2.col12.body.content.number %>
+							</span>
+							<a href=<%= section2.col12.body.content.cmt.link %> class="kt-widget19__comment">
+								<%= section2.col12.body.content.cmt.text %>
+							</a>
+						</div>
+					</div>
+					<div class="kt-widget19__text">
+						<%= section2.col12.body.text %>
+					</div>
+				</div>
+				<div class="kt-widget19__action">
+					<a href=<%= section2.col12.body.btn.link %> class="btn btn-sm btn-label-brand btn-bold"><%= section2.col12.body.btn.text %></a>
+				</div>
+			</div>
+		</div>
+
+		<!--end:: Widgets/Blog-->
+	</div>
+</div>

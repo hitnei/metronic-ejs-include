@@ -1,0 +1,20 @@
+{  
+    "head":{  
+       "title":"User Quick Actions",
+       "button":"23 tasks pending"
+    },
+    "body":{  
+       "title":[  
+          "Accounting",
+          "Administration",
+          "Projects",
+          "Customers"
+       ],
+       "desc":[  
+          "eCommerce",
+          "Console",
+          "Pending Tasks",
+          "Latest cases"
+       ]
+    }
+ }

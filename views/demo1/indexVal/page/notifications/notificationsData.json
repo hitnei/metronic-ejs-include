@@ -1,0 +1,78 @@
+{  
+    "head":{  
+       "title":"User Notifications",
+       "span":"23 new",
+       "list":[  
+          "Alerts",
+          "Events",
+          "Logs"
+       ]
+    },
+    "body":[  
+       {  
+          "title":[  
+             "New order has been received",
+             "New customer is registered",
+             "Application has been approved",
+             "New file has been uploaded",
+             "New user feedback received",
+             "System reboot has been successfully completed",
+             "New order has been placed",
+             "Company meeting canceled",
+             "New report has been received",
+             "Finance report has been generated",
+             "New customer comment recieved",
+             "New customer is registered"
+          ],
+          "time":[  
+             "2 hrs ago",
+             "3 hrs ago",
+             "3 hrs ago",
+             "5 hrs ago",
+             "8 hrs ago",
+             "12 hrs ago",
+             "15 hrs ago",
+             "19 hrs ago",
+             "23 hrs ago",
+             "25 hrs ago",
+             "2 days ago",
+             "3 days ago"
+          ]
+       },
+       {  
+          "title":[  
+             "New order has been received",
+             "Finance report has been generated",
+             "New order has been received",
+             "New customer is registered",
+             "Application has been approved",
+             "New file has been uploaded",
+             "New user feedback received",
+             "System reboot has been successfully completed",
+             "New order has been placed",
+             "Company meeting canceled",
+             "New report has been received",
+             "Finance report has been generated",
+             "New customer comment recieved",
+             "New customer is registered"
+          ],
+          "time":[  
+             "23 hrs ago",
+             "25 hrs ago",
+             "2 hrs ago",
+             "3 hrs ago",
+             "3 hrs ago",
+             "5 hrs ago",
+             "8 hrs ago",
+             "12 hrs ago",
+             "15 hrs ago",
+             "19 hrs ago",
+             "23 hrs ago",
+             "25 hrs ago",
+             "2 days ago",
+             "3 days ago"
+          ]
+       },
+       "All caught up!<br>No new notifications."
+    ]
+ }

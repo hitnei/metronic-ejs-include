@@ -1,0 +1,99 @@
+{
+    "head":{
+       "left":{
+          "title":"Jason Muller",
+          "status":"Active"
+       },
+       "right":[
+          {
+             "text":"Messaging",
+             "title":"Click to learn more..."
+          },
+          {
+             "text":"New Group",
+             "link":"#"
+          },
+          {
+             "text":"Contacts",
+             "link":"#",
+             "badge":"5"
+          },
+          {
+             "text":"Calls",
+             "link":"#"
+          },
+          {
+             "text":"Settings",
+             "link":"#"
+          },
+          {
+             "text":"Help",
+             "link":"#"
+          },
+          {
+             "text":"Upgrade plan",
+             "link":"#"
+          },
+          {
+             "text":"Learn more",
+             "link":"#",
+             "title":"Click to learn more..."
+          }
+       ]
+    },
+    "body":{
+       "img":[
+          "/assets/media/users/100_12.jpg",
+          "/assets/media/users/300_21.jpg"
+       ],
+       "link":[
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+       ],
+       "username":[
+          "Jason Muller",
+          "You"
+       ],
+       "time":[
+          "2 Hours",
+          "30 Seconds",
+          "30 Seconds",
+          "Just Now",
+          "2 Hours",
+          "30 Seconds",
+          "30 Seconds",
+          "Just Now"
+       ],
+       "text":[
+          "How likely are you to recommend our company<br> to your friends and family?",
+          "Hey there, we’re just writing to let you know that you’ve<br> been subscribed to a repository on GitHub.",
+          "Ok, Understood!",
+          "You’ll receive notifications for all issues, pull requests!",
+          [
+             "You were automatically",
+             "subscribed",
+             "<br>because you’ve been given access to the repository"
+          ],
+          "You can unwatch this repository immediately <br>by clicking here:",
+          "Discover what students who viewed Learn <br>Figma - UI/UX Design Essential Training also viewed",
+          "Most purchased Business courses during this sale!"
+       ]
+    },
+    "footer":{
+       "placeholder":"Type here...",
+       "list":{
+          "list":[
+             "#",
+             "#",
+             "#"
+          ]
+       },
+       "btn":"reply"
+    }
+ }

@@ -1,0 +1,116 @@
+{  
+    "brand":[  
+       "Pages",
+       "Features",
+       "Apps"
+    ],
+    "section1":[  
+       {  
+          "link":"demo1/index.html",
+          "text":"My Account"
+       },
+       {  
+          "badge":"2",
+          "text":"Task Manager"
+       },
+       {  
+          "text":"Team Manager",
+          "dropdown":[  
+             "Add Team Member",
+             "Edit Team Member",
+             "Delete Team Member",
+             "Team Member Reports",
+             "Assign Tasks",
+             "Promote Team Member"
+          ]
+       },
+       {  
+          "text":"Projects Manager",
+          "dropdown":[  
+             "Latest Projects",
+             "Ongoing Projects",
+             "Urgent Projects",
+             "Completed Projects",
+             "Dropped Projects"
+          ]
+       },
+       {  
+          "text":"Create New Project"
+       }
+    ],
+    "section2":[  
+       {  
+          "menu":"Task Reports",
+          "list":[  
+             "Latest Tasks",
+             "Pending Tasks",
+             "Urgent Tasks",
+             "Completed Tasks",
+             "Failed Tasks"
+          ]
+       },
+       {  
+          "menu":"Profit Margins",
+          "list":[  
+             "Overall Profits",
+             "Gross Profits",
+             "Nett Profits",
+             "Year to Date Reports",
+             "Quarterly Profits",
+             "Monthly Profits"
+          ]
+       },
+       {  
+          "menu":"Staff Management",
+          "list":[  
+             "Top Management",
+             "Project Managers",
+             "Development Staff",
+             "Customer Service",
+             "Sales and Marketing",
+             "Executives"
+          ]
+       },
+       {  
+          "menu":"Tools",
+          "list":[  
+             "Analytical Reports",
+             "Customer CRM",
+             "Operational Growth",
+             "Social Media Presence",
+             "Files and Directories",
+             "Audit & Logs"
+          ]
+       }
+    ],
+    "section3":[  
+       "Reporting",
+       {  
+          "text":"Social Presence",
+          "dropdown":[  
+             "Reached Users",
+             "SEO Ranking",
+             "User Dropout Points",
+             "Market Segments",
+             "Opportunity Growth"
+          ]
+       },
+       "Sales & Marketing",
+       {  
+          "text":"Campaigns",
+          "badge":"3"
+       },
+       {  
+          "text":"Deployment Center",
+          "list":[  
+             {  
+                "text":"Merge Branch",
+                "badge":"3"
+             },
+             "Version Controls",
+             "Database Manager",
+             "System Settings"
+          ]
+       }
+    ]
+ }
