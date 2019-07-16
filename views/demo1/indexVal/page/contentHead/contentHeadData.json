@@ -1,0 +1,43 @@
+{
+    "main":{
+       "title":"Dashboard",
+       "desc":"#XRS-45670",
+       "btn":{
+          "link":"#",
+          "text":"Add New"
+       }
+    },
+    "toolbar":{
+       "list":[
+          {
+             "link":"#",
+             "btn":"Today"
+          },
+          {
+             "link":"#",
+             "btn":"Month"
+          },
+          {
+             "link":"#",
+             "btn":"Year"
+          },
+          {
+             "link":"#",
+             "btn":"Actions"
+          }
+       ],
+       "dropdown":{
+          "head":"Add anything or jump to:",
+          "title":"Click to learn more...",
+          "list":[
+             "Order",
+             "Ticket",
+             "Goal",
+             "Support Case",
+             "Upgrade plan",
+             "Learn more"
+          ],
+          "badge":"5"
+       }
+    }
+ }

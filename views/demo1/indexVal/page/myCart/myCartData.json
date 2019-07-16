@@ -1,0 +1,59 @@
+{
+    "head":{
+       "title":"My Cart",
+       "button":"2 Items"
+    },
+    "body":{
+       "title":[
+          "Samsung",
+          "Panasonic",
+          "Fujifilm",
+          "Candy Machine"
+       ],
+       "desc":[
+          "Profile info, Timeline etc",
+          "For PHoto & Others",
+          "Profile info, Timeline etc",
+          "For PHoto & Others"
+       ],
+       "price":[
+          "$ 450",
+          "$ 329",
+          "$ 520",
+          "$ 784"
+       ],
+       "text":[
+          "for",
+          "for",
+          "for",
+          "for"
+       ],
+       "quantity":[
+          "7",
+          "1",
+          "6",
+          "4"
+       ],
+       "img":[
+          "/assets/media/products/product9.jpg",
+          "/assets/media/products/product13.jpg",
+          "/assets/media/products/product16.jpg",
+          "/assets/media/products/product15.jpg"
+       ]
+    },
+    "footer":{
+       "section":{
+          "subtitel":[
+             "Sub Total",
+             "Taxes",
+             "Total"
+          ],
+          "price":[
+             "$ 840.00",
+             "$ 72.00",
+             "$ 912.00"
+          ]
+       },
+       "button":"Place Order"
+    }
+ }

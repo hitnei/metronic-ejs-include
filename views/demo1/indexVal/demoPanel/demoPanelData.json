@@ -1,0 +1,76 @@
+{
+    "head":{
+       "link":"#",
+       "title":"Select A Demo"
+    },
+    "body":{
+       "title":[
+          "Default",
+          "Demo 2",
+          "Demo 3",
+          "Demo 4",
+          "Demo 5",
+          "Demo 6",
+          "Demo 7",
+          "Demo 8",
+          "Demo 9",
+          "Demo 10",
+          "Demo 11",
+          "Demo 12",
+          "Demo 13",
+          "Demo 14"
+       ],
+       "img":[
+          "/assets/media/demos/preview/demo1.jpg",
+          "/assets/media/demos/preview/demo2.jpg",
+          "/assets/media/demos/preview/demo3.jpg",
+          "/assets/media/demos/preview/demo4.jpg",
+          "/assets/media/demos/preview/demo5.jpg",
+          "/assets/media/demos/preview/demo6.jpg",
+          "/assets/media/demos/preview/demo7.jpg",
+          "/assets/media/demos/preview/demo8.jpg",
+          "/assets/media/demos/preview/demo9.jpg",
+          "/assets/media/demos/preview/demo10.jpg",
+          "/assets/media/demos/preview/demo11.jpg",
+          "/assets/media/demos/preview/demo12.jpg",
+          "/assets/media/demos/preview/demo13.jpg",
+          "/assets/media/demos/preview/demo14.jpg"
+       ],
+       "link":[
+          "demo1/index.html",
+          "demo2/index.html",
+          "demo3/index.html",
+          "demo4/index.html",
+          "demo5/index.html",
+          "demo6/index.html",
+          "demo7/index.html",
+          "demo8/index.html",
+          "demo9/index.html",
+          "demo10/index.html",
+          "demo11/index.html",
+          "demo12/index.html",
+          "demo13/index.html",
+          "demo14/index.html"
+       ],
+       "btn":[
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Preview",
+          "Coming soon",
+          "Coming soon"
+       ]
+    },
+    "footer":{
+       "link":"https://1.envato.market/EA4JP",
+       "text":"Buy Metronic Now!"
+    }
+ }

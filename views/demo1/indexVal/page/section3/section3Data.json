@@ -1,0 +1,21 @@
+{
+    "col8":{
+       "head":{
+          "title":"Best Sellers",
+          "list":[
+             "Latest",
+             "Month",
+             "All time"
+          ]
+       }
+    },
+    "col12":{
+       "head":{
+          "title":"New Users",
+          "list":[
+             "Today",
+             "Month"
+          ]
+       }
+    }
+ }

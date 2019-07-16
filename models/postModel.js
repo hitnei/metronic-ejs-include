@@ -8,7 +8,10 @@ const postSchema = new schema({
     shortURL: String,
     customURL: String
   },
-  listComment: [{ username: String, content: String }]
+  listComment: {
+    type: schema.Types.ObjectId,
+    ref: 'comment'
+  }
 });
 
 const PostModel = mongoose.model('Post', postSchema);

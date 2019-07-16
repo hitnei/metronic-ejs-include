@@ -1,0 +1,26 @@
+{
+    "head":{
+       "title":"Inbound Bandwidth",
+       "dropdown":{
+          "btn":"Export",
+          "link":[
+             "#",
+             "#",
+             "#",
+             "#",
+             "#"
+          ],
+          "text":[
+             "Reports",
+             "Messages",
+             "Charts",
+             "Members",
+             "Settings"
+          ]
+       }
+    },
+    "body":{
+       "number":"670+",
+       "desc":"Successful transactions"
+    }
+ }

@@ -1,0 +1,17 @@
+{
+    "img":"/assets/media/flags/020-flag.svg",
+    "list":[
+       {
+          "img":"/assets/media/flags/020-flag.svg",
+          "text":"English"
+       },
+       {
+          "img":"/assets/media/flags/016-spain.svg",
+          "text":"Spanish"
+       },
+       {
+          "img":"/assets/media/flags/017-germany.svg",
+          "text":"German"
+       }
+    ]
+ }

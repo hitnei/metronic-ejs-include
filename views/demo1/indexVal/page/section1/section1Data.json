@@ -1,0 +1,136 @@
+{
+    "col4":{
+       "head":{
+          "title":"Activity",
+          "btn":"Export",
+          "dropdown":{
+             "section":[
+                "Finance",
+                "HR"
+             ],
+             "link":[
+                "#",
+                "#",
+                "#",
+                "#",
+                "#"
+             ],
+             "text":[
+                "Statistics",
+                "Events",
+                "Reports",
+                "Notifications",
+                "Files"
+             ]
+          }
+       },
+       "body":{
+          "title":[
+             "Delivered",
+             "Ordered",
+             "Reported",
+             "Arrived"
+          ],
+          "desc":[
+             "15 New Paskages",
+             "72 New Items",
+             "72 Support Cases",
+             "34 Upgraded Boxes"
+          ]
+       }
+    },
+    "col12":{
+       "head":{
+          "title":"Recent Activities",
+          "dropdown":{
+             "head":"Export Options",
+             "title":"Click to learn more...",
+             "link":[
+                "#",
+                "#",
+                "#",
+                "#",
+                "#",
+                "#"
+             ],
+             "text":[
+                "Activity",
+                "FAQ",
+                "Settings",
+                "Support",
+                "Upgrade plan",
+                "Learn more"
+             ],
+             "badge":"5"
+          }
+       },
+       "body":[
+          {
+             "time":"10:00",
+             "text":"Lorem ipsum dolor sit amit,consectetur eiusmdd tempor<br>incididunt ut labore et dolore magna"
+          },
+          {
+             "time":"12:45",
+             "text":"AEOL Meeting With",
+             "list":{
+                "link":[
+                   "#",
+                   "#",
+                   "#",
+                   "#"
+                ],
+                "img":[
+                   "/assets/media/users/100_4.jpg",
+                   "/assets/media/users/100_13.jpg",
+                   "/assets/media/users/100_11.jpg",
+                   "/assets/media/users/100_14.jpg"
+                ]
+             }
+          },
+          {
+             "time":"14:00",
+             "text":[
+                "Make Deposit",
+                "USD 700",
+                "To ESL."
+             ],
+             "link":"#"
+          },
+          {
+             "time":"16:00",
+             "text":"Lorem ipsum dolor sit amit,consectetur eiusmdd tempor<br>incididunt ut labore et dolore magna elit enim at minim<br>veniam quis nostrud"
+          },
+          {
+             "time":"17:00",
+             "text":[
+                "Placed a new order in ",
+                "SIGNATURE MOBILE",
+                "marketplace."
+             ],
+             "link":"#"
+          },
+          {
+             "time":"16:00",
+             "text":"Lorem ipsum dolor sit amit,consectetur eiusmdd tempor<br>incididunt ut labore et dolore magna elit enim at minim<br>veniam quis nostrud"
+          },
+          {
+             "time":"17:00",
+             "text":[
+                "Received a new feedback on ",
+                "FinancePro App",
+                "product."
+             ],
+             "link":"#"
+          },
+          {
+             "time":"15:30",
+             "text":[
+                "New notification message has been received on ",
+                "LoopFin Pro",
+                "product."
+             ],
+             "link":"#"
+          }
+       ]
+    }
+ }

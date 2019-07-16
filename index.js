@@ -13,6 +13,29 @@ app.use('/', indexRouter);
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+
+io.on('connection', function (socket) {
+    console.log(socket.id + ' connected!');
+    socket.on('client-send-data', function (data) {
+        console.log(data + ' ' + 'of ' + socket.id);
+        io.sockets.emit('server-send-data', data + socket.id);
+    });
+});
+
+server.listen(8080);
+console.log('8080 is the magic port');
+
+//connect to mongodb
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/temp', { useNewUrlParser: true, useFindAndModify: false });
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+    console.log('Da ket noi den mongodb');
+});
+
 app.get('/asd', function (req, res) {
     // const data = require('./views/classic/demo1/index/page/content/section1/section1');
     // var arr = [];
@@ -29,8 +52,141 @@ app.get('/asd', function (req, res) {
 
 
 // index page
-app.get('/', function (req, res) {
-    res.render("classic/demo1/index.ejs");
+app.get('/dashboardVal', function (req, res) {
+
+    var returnData = [];
+
+    // head
+    var BaseView = require('./views/demo1/indexVal/head/head');
+    var data = new BaseView();
+    returnData['head'] = data.generateView();
+
+    // headerMobile
+    var BaseView = require('./views/demo1/indexVal/page/headerMobile/headerMobile');
+    var data = new BaseView();
+    returnData['headerMobile'] = data.generateView();
+
+    //asideMenu
+    var BaseView = require('./views/demo1/indexVal/page/asideMenu/asideMenu');
+    var data = new BaseView();
+    returnData['asideMenu'] = data.generateView();
+
+    //headerMenu
+    var BaseView = require('./views/demo1/indexVal/page/headerMenu/headerMenu');
+    var data = new BaseView();
+    returnData['headerMenu'] = data.generateView();
+
+    //notifications
+    var BaseView = require('./views/demo1/indexVal/page/notifications/notifications');
+    var data = new BaseView();
+    returnData['notifications'] = data.generateView();
+
+    //quickActions
+    var BaseView = require('./views/demo1/indexVal/page/quickActions/quickActions');
+    var data = new BaseView();
+    returnData['quickActions'] = data.generateView();
+
+    //myCart
+    var BaseView = require('./views/demo1/indexVal/page/myCart/myCart');
+    var data = new BaseView();
+    returnData['myCart'] = data.generateView();
+
+    //languageBar
+    var BaseView = require('./views/demo1/indexVal/page/languageBar/languageBar');
+    var data = new BaseView();
+    returnData['languageBar'] = data.generateView();
+
+    //userBar
+    var BaseView = require('./views/demo1/indexVal/page/userBar/userBar');
+    var data = new BaseView();
+    returnData['userBar'] = data.generateView();
+
+    //contentHead
+    var BaseView = require('./views/demo1/indexVal/page/contentHead/contentHead');
+    var data = new BaseView();
+    returnData['contentHead'] = data.generateView();
+
+    //footer
+    var BaseView = require('./views/demo1/indexVal/page/footer/footer');
+    var data = new BaseView();
+    returnData['footer'] = data.generateView();
+
+    //quickPanel
+    var BaseView = require('./views/demo1/indexVal/quickPanel/quickPanel');
+    var data = new BaseView();
+    returnData['quickPanel'] = data.generateView();
+
+    //stickyToolbar
+    var BaseView = require('./views/demo1/indexVal/stickyToolbar/stickyToolbar');
+    var data = new BaseView();
+    returnData['stickyToolbar'] = data.generateView();
+
+    //demoPanel
+    var BaseView = require('./views/demo1/indexVal/demoPanel/demoPanel');
+    var data = new BaseView();
+    returnData['demoPanel'] = data.generateView();
+
+    //chat
+    var BaseView = require('./views/demo1/indexVal/chat/chat');
+    var data = new BaseView();
+    returnData['chat'] = data.generateView();
+
+    //portletSection1
+    var BaseView = require('./views/demo1/indexVal/page/portletSection1/portletSection1');
+    var data = new BaseView();
+    returnData['portletSection1'] = data.generateView();
+
+    //portletSection3
+    var BaseView = require('./views/demo1/indexVal/page/portletSection3/portletSection3');
+    var data = new BaseView();
+    returnData['portletSection3'] = data.generateView();
+
+    //portletSection5
+    var BaseView = require('./views/demo1/indexVal/page/portletSection5/portletSection5');
+    var data = new BaseView();
+    returnData['portletSection5'] = data.generateView();
+
+    //portletSection31
+    var BaseView = require('./views/demo1/indexVal/page/portletSection31/portletSection31');
+    var data = new BaseView();
+    returnData['portletSection31'] = data.generateView();
+
+    //portletSection51
+    var BaseView = require('./views/demo1/indexVal/page/portletSection51/portletSection51');
+    var data = new BaseView();
+    returnData['portletSection51'] = data.generateView();
+
+    //portletSection52
+    var BaseView = require('./views/demo1/indexVal/page/portletSection52/portletSection52');
+    var data = new BaseView();
+    returnData['portletSection52'] = data.generateView();
+
+    //section1
+    var BaseView = require('./views/demo1/indexVal/page/section1/section1');
+    var data = new BaseView();
+    returnData['section1'] = data.generateView();
+
+    //section2
+    var BaseView = require('./views/demo1/indexVal/page/section2/section2');
+    var data = new BaseView();
+    returnData['section2'] = data.generateView();
+
+    //section3
+    var BaseView = require('./views/demo1/indexVal/page/section3/section3');
+    var data = new BaseView();
+    returnData['section3'] = data.generateView();
+
+    //section4
+    var BaseView = require('./views/demo1/indexVal/page/section4/section4');
+    var data = new BaseView();
+    returnData['section4'] = data.generateView();
+
+    //section5
+    var BaseView = require('./views/demo1/indexVal/page/section5/section5');
+    var data = new BaseView();
+    returnData['section5'] = data.generateView();
+
+    res.render("demo1/indexVal.ejs", returnData);
 });
 
 // flaticon page
@@ -228,16 +384,4 @@ app.get('/pricing4', function (req, res) {
 // error page
 app.get('/error', function (req, res) {
     res.render("./demo1/custom/pages/error/error-6.ejs");
-});
-
-app.listen(8080);
-console.log('8080 is the magic port');
-
-//connect to mongodb
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/temp', { useNewUrlParser: true, useFindAndModify: false });
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-    console.log('Da ket noi den mongodb');
 });

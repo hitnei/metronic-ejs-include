@@ -1,0 +1,39 @@
+{
+    "user":{
+       "welcome":"Hi,",
+       "username":"Sean",
+       "img":"/assets/media/users/300_25.jpg",
+       "badge":"S"
+    },
+    "head":{
+       "img":"/assets/media/users/300_25.jpg",
+       "badge":"S",
+       "cardName":"Sean Stone",
+       "cardBadge":"23 messages"
+    },
+    "navigation":{
+       "title":[
+          "My Profile",
+          "My Messages",
+          "My Activities",
+          "My Tasks",
+          "Billing"
+       ],
+       "time":[
+          "Account settings and more",
+          "Inbox and tasks",
+          "Logs and notifications",
+          "latest tasks and projects",
+          "billing & statements"
+       ],
+       "badge":"2 pending",
+       "link":[
+          "demo1/custom/user/login-v2.html",
+          "demo1/custom/user/login-v2.html"
+       ],
+       "btn":[
+          "Sign Out",
+          "Upgrade Plan"
+       ]
+    }
+ }

@@ -1,0 +1,34 @@
+{
+    "info":{
+       "title":{
+          "link":"#",
+          "text":"Make Metronic Great Again.Lorem Ipsum Amet"
+       },
+       "username":{
+          "link":"#",
+          "text":"By Bob"
+       }
+    },
+    "list":[
+       {
+          "link":"#",
+          "text":"Reports"
+       },
+       {
+          "link":"#",
+          "text":"Messages"
+       },
+       {
+          "link":"#",
+          "text":"Charts"
+       },
+       {
+          "link":"#",
+          "text":"Members"
+       },
+       {
+          "link":"#",
+          "text":"Settings"
+       }
+    ]
+ }
