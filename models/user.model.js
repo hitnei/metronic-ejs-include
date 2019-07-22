@@ -18,7 +18,7 @@ class UserClass {
   }
 
   static async registerUser(newUser) {
-    const { username, password } = newUser;
+    // const { username, password } = newUser;
 
     return await UserModel(newUser).save();
   }

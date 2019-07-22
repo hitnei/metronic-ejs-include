@@ -105,7 +105,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
     var socket = io();
-    socket.emit('client-send-data', 'this is the data');
+    socket.emit('client-send-data', 'this is the data of ');
     socket.on('server-send-data', function (data) {
         alert(data);
     });

@@ -20,7 +20,7 @@ io.on('connection', function (socket) {
     console.log(socket.id + ' connected!');
     socket.on('client-send-data', function (data) {
         console.log(data + ' ' + 'of ' + socket.id);
-        io.sockets.emit('server-send-data', data + socket.id);
+        io.emit('server-send-data', data + socket.id);
     });
 });
 
