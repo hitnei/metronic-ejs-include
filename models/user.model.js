@@ -4,7 +4,7 @@ const schema = mongoose.Schema;
 const userSchema = new schema({
   username: String,
   password: String,
-  role: String
+  role: Number
 });
 
 
@@ -18,8 +18,6 @@ class UserClass {
   }
 
   static async registerUser(newUser) {
-    // const { username, password } = newUser;
-
     return await UserModel(newUser).save();
   }
 
@@ -27,6 +25,16 @@ class UserClass {
     if (!id) return Promise.reject("Người dùng không tồn tại");
 
     return await UserModel.findByIdAndRemove(id);
+  }
+
+  static changePassword(info) {
+    var userID = info.userID;
+    var newPassword = info.newPassword;
+    var confirmPassword = info.confirmPassword;
+
+    if (newPassword === confirmPassword)
+      return UserModel.findByIdAndUpdate(userID, { password: newPassword }, {new: true});
+    else return Promise.reject('Passwords do not match');
   }
 }
 

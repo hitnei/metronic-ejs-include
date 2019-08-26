@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" cont ent="ie=edge">
+  <title>Document</title>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/ckeditor/ckeditor.js"></script>
+  <!-- <script src="/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script> -->
+  <script>
+
+    $(document).ready(function () {
+      CKEDITOR.replace(document.getElementById('editor'));
+
+      var userID = $("#userID").text();
+      socket.emit('request-join-room', userID);
+    });
+
+    $('#createForm').bind('ajax:complete', function (data) {
+
+    })
+
+    var socket = io();
+    socket.on('comment-added', function (data) {
+      alert(data.msg);
+      $('#commentArea').append('<p>' + data.newComment.commentBy + ': ' + data.newComment.content + '</p>');
+    });
+
+    socket.on('new-post-created', function (createdPost) {
+      $('#post').append('<br>id: ' + createdPost._id + '<br>title: ' + createdPost.title + '<br>content: ' + createdPost.content);
+    });
+
+    socket.on('res-follow-post', function (data) {
+      if (data == 1) {
+        alert('Follow post');
+      } else alert('Unfollow post');
+    });
+
+    function addComment() {
+      var fromPost = document.getElementById('fromPost').value;
+      var content = document.getElementById('commentContent').value;
+      var commentBy = $('#userID').text();
+      var relateTo = document.getElementById('relateTo').value;
+
+      var item = {};
+      if (relateTo == '')
+        item = { fromPost, content, commentBy };
+      else item = { fromPost, content, commentBy, relateTo };
+
+      $.ajax({
+        type: 'POST',
+        url: '/addcommenttopost',
+        data: {
+          data: item
+        },
+        success: function (data) {
+          // add follower to post
+          let addFollower = { followerID: commentBy, postID: fromPost };
+          socket.emit('add-follower', addFollower);
+
+          // send notification to other users
+          socket.emit('user-comment', data.addedComment);
+          $('#commentArea').append('<p>' + data.addedComment.commentBy + ': ' + data.addedComment.content + '</p>');
+        }
+      })
+    }
+
+    function createPost() {
+      var postBy = $('#userID').text();
+      var title = $('#title').val();
+      var content = CKEDITOR.instances.editor.getData();
+      var item = { postBy, title, content };
+
+      $.ajax({
+        type: 'POST',
+        url: '/createpost',
+        data: {
+          data: item
+        },
+        success: function (data) {
+          socket.emit('join-post-room', data.createdPost);
+          $('#post').append('<br>id: ' + data.createdPost._id + ' <br>title: ' + data.createdPost.title + ' <br>content: ' + data.createdPost.content);
+
+          // add follower to post
+          let addFollower = { followerID: postBy, postID: data.createdPost._id };
+          socket.emit('add-follower', addFollower);
+        }
+      })
+    }
+
+    function followPost() {
+      let postID = document.getElementById('postID').value;
+      let followerID = $('#userID').text();
+      let item = { postID: postID, followerID: followerID };
+
+      socket.emit('un-follow-post', item);
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+  <div class="container" style="padding-bottom: 50px;">
+    <h3>UserID: <span id="userID"><%= userID %></span></h3>
+
+    <form action="/createPost" method="post" enctype="multipart/form-data">
+      <label for="postBy">Post By</label>
+      <input type="text" name="postBy" class="form-control" value="<%= userID %>"><br>
+      <label for="">Title</label>
+      <input id="title" class="form-control" type="text" name="title">
+      <textarea name="content" id="editor">defaul content</textarea>
+      <!-- <p><input type="submit" value="Submit"></p> -->
+    </form>
+    <input type="submit" value="Submit" onclick="createPost()">
+
+    <div class="row">
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-8">
+
+          <h4 class="page-header">Add comment</h4>
+          <form role="form">
+            <div class="form-group float-label-control">
+              <label for="">From Post</label>
+              <input id="fromPost" class="form-control" placeholder="From Post" type="text">
+            </div>
+            <div class="form-group float-label-control">
+              <label for="">Comment content</label>
+              <input id="commentContent" class="form-control" placeholder="Comment content" type="text">
+            </div>
+            <div class="form-group float-label-control">
+              <label for="">Relate To</label>
+              <input id="relateTo" class="form-control" placeholder="Relate To" type="text">
+            </div>
+          </form>
+          <button onclick="addComment()">Add comment</button>
+
+          <h4 class="page-header">Follow post</h4>
+          <form role="form">
+            <div class="form-group float-label-control">
+              <label for="">PostID</label>
+              <input id="postID" class="form-control" placeholder="PostID" type="text">
+            </div>
+          </form>
+          <button onclick="followPost()">Follow</button>
+
+
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                Posts and Comments
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div id="post"></div>
+              <div id="commentArea"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

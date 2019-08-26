@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+var PostModel = require('./models/post.model');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -15,13 +18,75 @@ app.use(express.static('public'));
 
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
-
+var rooms = [];
 io.on('connection', function (socket) {
     console.log(socket.id + ' connected!');
-    socket.on('client-send-data', function (data) {
-        console.log(data + ' ' + 'of ' + socket.id);
-        io.emit('server-send-data', data + socket.id);
+
+    socket.on('request-join-room', function (userID) {
+        // query list room cua user follow
+        // console.log('userID receive: ' + userID);
+        PostModel.followPost(userID).then(roomFollow => {
+            for (var i = 0; i < roomFollow.length; i++) {
+                socket.join(roomFollow[i].id);
+            }
+            // console.log(roomFollow);
+        })
     });
+
+    socket.on('add-follower', function (data) {
+        let postID = data.postID;
+        let followerID = data.followerID;
+        var check = 1;
+
+        if (typeof postID == 'string' && typeof followerID == 'string') {
+            PostModel.findAPost(postID).then(temp => {
+                for (var i = 0; i < temp.follower.length; i++)
+                    if (followerID == temp.follower[i])
+                        check = 0;
+                if (check == 1)
+                    PostModel.addFollower({ postID, followerID }).then(addPost => { });
+            }).catch(err => {
+
+            })
+        }
+    });
+
+    socket.on('join-post-room', function (createdPost) {
+        socket.join(createdPost._id);
+        rooms.push(createdPost._id);
+        socket.broadcast.emit('new-post-created', createdPost);
+    });
+
+    socket.on('user-comment', function (addedComment) {
+        socket.join(addedComment.fromPost);
+        socket.to(addedComment.fromPost).emit('comment-added', { msg: ('new comment on post: ' + addedComment.fromPost), newComment: addedComment });
+
+    });
+
+    socket.on('un-follow-post', function (data) {
+        let postID = data.postID;
+        let followerID = data.followerID;
+        var check = 1;
+
+        if (typeof postID == 'string' && typeof followerID == 'string') {
+            PostModel.findAPost(postID).then(temp => {
+                for (var i = 0; i < temp.follower.length; i++)
+                    if (followerID == temp.follower[i])
+                        check = 0;
+
+                if (check == 1)
+                    PostModel.addFollower({ postID, followerID }).then(addPost => {
+                        socket.emit('res-follow-post', check);
+                    });
+                else
+                    PostModel.deleteFollower({ postID, followerID }).then(deleteFollower => {
+                        socket.emit('res-follow-post', check);
+                        socket.leave(postID);
+                    });
+            }).catch(err => { })
+        }
+    });
+
 });
 
 server.listen(8080);
@@ -34,25 +99,20 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
     console.log('Da ket noi den mongodb');
-});
 
-app.get('/asd', function (req, res) {
-    // const data = require('./views/classic/demo1/index/page/content/section1/section1');
-    // var arr = [];
-    // arr['section1'] = data.generateView();
+    // lay danh sach room ra
+    PostModel.findAll().then(posts => {
+        for (var i = 0; i < posts.length; i++) {
+            rooms.push(posts[i].id);
+            // console.log(rooms[i]);
+        }
+    });
 
-    var section1 = require('./views/classic/demo1/index/page/content/section1/section1');
-    var data = new section1();
-    var arr = [];
-    arr['section1'] = data.generateView();
-
-    res.render("classic/demo1/index/page/content/section1/section1", arr
-    );
 });
 
 
 // index page
-app.get('/dashboardVal', function (req, res) {
+app.get('/dashboardval', function (req, res) {
 
     var returnData = [];
 
